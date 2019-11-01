@@ -2,19 +2,20 @@
 //  LoginView.swift
 //  PriceBoxApp
 //
-//  Created by Burak Yılmaz on 2.11.2019.
+//  Created by Burak Yılmaz on 1.11.2019.
 //  Copyright © 2019 Burak Yılmaz. All rights reserved.
 //
 
 import Foundation
 
-class LoginView{
+class RegisterView{
+    var adSoyad : String = ""
     var emailAdresi : String = ""
     var sifre : String = ""
     
-    func createUser(emailAdresi:String,sifre:String){
+    func createUser(adSoyad :String,emailAdresi:String,sifre:String){
         
-        let parameters = ["email": emailAdresi as Any ,  "password": sifre as Any] as [String : Any]
+        let parameters = ["name": adSoyad as Any, "email": emailAdresi as Any ,  "password": sifre as Any] as [String : Any]
         
         let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/users")! //change the url
         
@@ -47,7 +48,7 @@ class LoginView{
                     //       print(json)
                     // handle json...
                     let decoder = JSONDecoder()
-                    let gitData = try decoder.decode(LoginModel.self, from: data)
+                    let gitData = try decoder.decode(RegisterModel.self, from: data)
                     if(gitData.response == true){
                         print("kayıt harbiden başarılı olmuş ya la")
                         DispatchQueue.main.async(){

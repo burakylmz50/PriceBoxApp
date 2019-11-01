@@ -9,25 +9,31 @@
 /* Begin PBXBuildFile section */
 		65A79F2D236C79590023308C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F2C236C79590023308C /* AppDelegate.swift */; };
 		65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F2E236C79590023308C /* SceneDelegate.swift */; };
-		65A79F31236C79590023308C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F30236C79590023308C /* LoginController.swift */; };
+		65A79F31236C79590023308C /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F30236C79590023308C /* RegisterController.swift */; };
 		65A79F34236C79590023308C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A79F32236C79590023308C /* Main.storyboard */; };
 		65A79F36236C795A0023308C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A79F35236C795A0023308C /* Assets.xcassets */; };
 		65A79F39236C795B0023308C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A79F37236C795B0023308C /* LaunchScreen.storyboard */; };
-		65A79F44236C7B500023308C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F43236C7B500023308C /* LoginView.swift */; };
-		65A79F46236C7B740023308C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F45236C7B740023308C /* LoginModel.swift */; };
+		65A79F44236C7B500023308C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F43236C7B500023308C /* RegisterView.swift */; };
+		65A79F46236C7B740023308C /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F45236C7B740023308C /* RegisterModel.swift */; };
+		65A79F48236CDE270023308C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F47236CDE270023308C /* LoginModel.swift */; };
+		65A79F4A236CDE380023308C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F49236CDE380023308C /* LoginView.swift */; };
+		65A79F4C236CDE530023308C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F4B236CDE530023308C /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65A79F29236C79590023308C /* PriceBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A79F2C236C79590023308C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A79F2E236C79590023308C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65A79F30236C79590023308C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		65A79F30236C79590023308C /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		65A79F33236C79590023308C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65A79F35236C795A0023308C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65A79F38236C795B0023308C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65A79F3A236C795B0023308C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65A79F43236C7B500023308C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		65A79F45236C7B740023308C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		65A79F43236C7B500023308C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		65A79F45236C7B740023308C /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		65A79F47236CDE270023308C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		65A79F49236CDE380023308C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		65A79F4B236CDE530023308C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,8 @@
 		65A79F40236C796A0023308C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				65A79F45236C7B740023308C /* LoginModel.swift */,
+				65A79F45236C7B740023308C /* RegisterModel.swift */,
+				65A79F47236CDE270023308C /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,7 +91,8 @@
 		65A79F41236C79710023308C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				65A79F43236C7B500023308C /* LoginView.swift */,
+				65A79F43236C7B500023308C /* RegisterView.swift */,
+				65A79F49236CDE380023308C /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,7 +100,8 @@
 		65A79F42236C79770023308C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				65A79F30236C79590023308C /* LoginController.swift */,
+				65A79F30236C79590023308C /* RegisterController.swift */,
+				65A79F4B236CDE530023308C /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,10 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A79F46236C7B740023308C /* LoginModel.swift in Sources */,
-				65A79F31236C79590023308C /* LoginController.swift in Sources */,
+				65A79F46236C7B740023308C /* RegisterModel.swift in Sources */,
+				65A79F4A236CDE380023308C /* LoginView.swift in Sources */,
+				65A79F48236CDE270023308C /* LoginModel.swift in Sources */,
+				65A79F31236C79590023308C /* RegisterController.swift in Sources */,
 				65A79F2D236C79590023308C /* AppDelegate.swift in Sources */,
-				65A79F44236C7B500023308C /* LoginView.swift in Sources */,
+				65A79F4C236CDE530023308C /* LoginController.swift in Sources */,
+				65A79F44236C7B500023308C /* RegisterView.swift in Sources */,
 				65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
