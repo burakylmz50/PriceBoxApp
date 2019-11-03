@@ -127,10 +127,26 @@
             </objects>
             <point key="canvasLocation" x="363.768115942029" y="128.57142857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="S4v-IL-hu7">
+            <objects>
+                <viewController id="7UY-LC-FdI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R08-xw-Eav">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ouM-dm-dXr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zUf-Vo-CuT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAx-HE-cB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="838"/>
+        </scene>
         <!--Login Controller-->
         <scene sceneID="8IK-jM-2Mu">
             <objects>
-                <viewController id="FiQ-4g-ZEi" customClass="LoginController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" id="FiQ-4g-ZEi" customClass="LoginController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m6A-xB-znX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +155,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="ZXt-Fk-6wo">
-                                <rect key="frame" x="70" y="44" width="274.00000000000023" height="128"/>
+                                <rect key="frame" x="70" y="44" width="274" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="EL2-pq-FMz"/>
                                 </constraints>
@@ -149,6 +165,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="6U7-lK-4af"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                             </textField>
@@ -157,6 +174,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="mPM-vQ-uzS"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
@@ -241,11 +259,12 @@
                         <outlet property="emailAdresi" destination="9Eq-st-3wd" id="AjL-gN-8md"/>
                         <outlet property="girisYap" destination="HOJ-Od-Fxc" id="xaE-6G-FyR"/>
                         <outlet property="sifre" destination="hQq-fC-ggG" id="ffA-9B-Rpg"/>
+                        <segue destination="7UY-LC-FdI" kind="show" identifier="loginToHome" id="CHk-C9-Uey"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glz-gw-f7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-541" y="129"/>
+            <point key="canvasLocation" x="-397.10144927536237" y="128.57142857142856"/>
         </scene>
     </scenes>
     <resources>

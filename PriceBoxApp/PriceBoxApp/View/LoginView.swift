@@ -7,16 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
-class LoginView{
+class LoginView:UIViewController{
     var emailAdresi : String = ""
     var sifre : String = ""
-    
-    func createUser(emailAdresi:String,sifre:String){
+    var tokenDonus : String = ""  // Kullanıcı giris yaptıktan sonra dönen token değeri.
+    var errorMessage : String = ""
+    func createUser(emailAdresi:String,sifre:String,completionHandler:@escaping (Bool) -> ()){
         
         let parameters = ["email": emailAdresi as Any ,  "password": sifre as Any] as [String : Any]
         
-        let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/users")! //change the url
+        let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/auth")! //change the url
         
         let session = URLSession.shared
         
@@ -44,15 +46,22 @@ class LoginView{
             
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    //       print(json)
+                    print(json)
                     // handle json...
                     let decoder = JSONDecoder()
                     let gitData = try decoder.decode(LoginModel.self, from: data)
                     if(gitData.response == true){
-                        print("kayıt harbiden başarılı olmuş ya la")
+                        print("Giriş başarılı")
+                        completionHandler(true)
+                        self.tokenDonus = gitData.token!
+                        
                         DispatchQueue.main.async(){
-                            //                            self.performSegue(withIdentifier: "uyeOldun", sender: self)
+                            //                              self.performSegue(withIdentifier: "loginToHome", sender: self)
                         }
+                    }
+                    else{
+                        self.errorMessage = gitData.msg!
+                        completionHandler(false)
                     }
                 }
             } catch let error {
