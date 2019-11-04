@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 
+  var tokenDonus : String = ""  // Kullanıcı giris yaptıktan sonra dönen token değeri.
+
 class LoginView:UIViewController{
     var emailAdresi : String = ""
     var sifre : String = ""
-    var tokenDonus : String = ""  // Kullanıcı giris yaptıktan sonra dönen token değeri.
+  
     var errorMessage : String = ""
     func createUser(emailAdresi:String,sifre:String,completionHandler:@escaping (Bool) -> ()){
         
@@ -53,7 +55,7 @@ class LoginView:UIViewController{
                     if(gitData.response == true){
                         print("Giriş başarılı")
                         completionHandler(true)
-                        self.tokenDonus = gitData.token!
+                        tokenDonus = gitData.token!
                         
                         DispatchQueue.main.async(){
                             //                              self.performSegue(withIdentifier: "loginToHome", sender: self)

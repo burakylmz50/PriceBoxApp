@@ -18,6 +18,13 @@
 		65A79F48236CDE270023308C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F47236CDE270023308C /* LoginModel.swift */; };
 		65A79F4A236CDE380023308C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F49236CDE380023308C /* LoginView.swift */; };
 		65A79F4C236CDE530023308C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F4B236CDE530023308C /* LoginController.swift */; };
+		65A79F4E236F18C00023308C /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F4D236F18C00023308C /* HomePageModel.swift */; };
+		65A79F50236F18CF0023308C /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F4F236F18CF0023308C /* HomePageView.swift */; };
+		65A79F52236F18E90023308C /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F51236F18E90023308C /* HomePageController.swift */; };
+		65A79F54236F3F640023308C /* DuyurularController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F53236F3F640023308C /* DuyurularController.swift */; };
+		65A79F56236F405E0023308C /* DuyurularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F55236F405E0023308C /* DuyurularView.swift */; };
+		65A79F59236F40790023308C /* DuyurularModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F58236F40790023308C /* DuyurularModel.swift */; };
+		65A79F5B236F80460023308C /* DuyurularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F5A236F80460023308C /* DuyurularTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		65A79F47236CDE270023308C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		65A79F49236CDE380023308C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		65A79F4B236CDE530023308C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		65A79F4D236F18C00023308C /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
+		65A79F4F236F18CF0023308C /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		65A79F51236F18E90023308C /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		65A79F53236F3F640023308C /* DuyurularController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyurularController.swift; sourceTree = "<group>"; };
+		65A79F55236F405E0023308C /* DuyurularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyurularView.swift; sourceTree = "<group>"; };
+		65A79F58236F40790023308C /* DuyurularModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyurularModel.swift; sourceTree = "<group>"; };
+		65A79F5A236F80460023308C /* DuyurularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyurularTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,8 @@
 			children = (
 				65A79F45236C7B740023308C /* RegisterModel.swift */,
 				65A79F47236CDE270023308C /* LoginModel.swift */,
+				65A79F4D236F18C00023308C /* HomePageModel.swift */,
+				65A79F58236F40790023308C /* DuyurularModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +109,9 @@
 			children = (
 				65A79F43236C7B500023308C /* RegisterView.swift */,
 				65A79F49236CDE380023308C /* LoginView.swift */,
+				65A79F4F236F18CF0023308C /* HomePageView.swift */,
+				65A79F55236F405E0023308C /* DuyurularView.swift */,
+				65A79F5A236F80460023308C /* DuyurularTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +121,8 @@
 			children = (
 				65A79F30236C79590023308C /* RegisterController.swift */,
 				65A79F4B236CDE530023308C /* LoginController.swift */,
+				65A79F51236F18E90023308C /* HomePageController.swift */,
+				65A79F53236F3F640023308C /* DuyurularController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,14 +198,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A79F4E236F18C00023308C /* HomePageModel.swift in Sources */,
 				65A79F46236C7B740023308C /* RegisterModel.swift in Sources */,
+				65A79F56236F405E0023308C /* DuyurularView.swift in Sources */,
 				65A79F4A236CDE380023308C /* LoginView.swift in Sources */,
 				65A79F48236CDE270023308C /* LoginModel.swift in Sources */,
+				65A79F50236F18CF0023308C /* HomePageView.swift in Sources */,
+				65A79F54236F3F640023308C /* DuyurularController.swift in Sources */,
 				65A79F31236C79590023308C /* RegisterController.swift in Sources */,
 				65A79F2D236C79590023308C /* AppDelegate.swift in Sources */,
 				65A79F4C236CDE530023308C /* LoginController.swift in Sources */,
 				65A79F44236C7B500023308C /* RegisterView.swift in Sources */,
 				65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */,
+				65A79F52236F18E90023308C /* HomePageController.swift in Sources */,
+				65A79F5B236F80460023308C /* DuyurularTableViewCell.swift in Sources */,
+				65A79F59236F40790023308C /* DuyurularModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
