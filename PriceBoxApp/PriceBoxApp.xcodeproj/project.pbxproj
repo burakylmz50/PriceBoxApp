@@ -35,6 +35,9 @@
 		65A79F6B2370A4E30023308C /* IbanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6A2370A4E30023308C /* IbanController.swift */; };
 		65A79F6D2370A4F80023308C /* IbanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6C2370A4F80023308C /* IbanView.swift */; };
 		65A79F6F2370A5080023308C /* IbanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6E2370A5080023308C /* IbanModel.swift */; };
+		65A79F712370E39D0023308C /* VirmanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F702370E39D0023308C /* VirmanController.swift */; };
+		65A79F732370E3BF0023308C /* VirmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F722370E3BF0023308C /* VirmanView.swift */; };
+		65A79F752370E3D00023308C /* VirmanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F742370E3D00023308C /* VirmanModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		65A79F6A2370A4E30023308C /* IbanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanController.swift; sourceTree = "<group>"; };
 		65A79F6C2370A4F80023308C /* IbanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanView.swift; sourceTree = "<group>"; };
 		65A79F6E2370A5080023308C /* IbanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanModel.swift; sourceTree = "<group>"; };
+		65A79F702370E39D0023308C /* VirmanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirmanController.swift; sourceTree = "<group>"; };
+		65A79F722370E3BF0023308C /* VirmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirmanView.swift; sourceTree = "<group>"; };
+		65A79F742370E3D00023308C /* VirmanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirmanModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 				65A79F60237067BB0023308C /* HaberAnalizModel.swift */,
 				65A79F6823709DF90023308C /* ParaCekmeModel.swift */,
 				65A79F6E2370A5080023308C /* IbanModel.swift */,
+				65A79F742370E3D00023308C /* VirmanModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 				65A79F62237069620023308C /* HaberAnalizTableViewCell.swift */,
 				65A79F6623709DE70023308C /* ParaCekmeView.swift */,
 				65A79F6C2370A4F80023308C /* IbanView.swift */,
+				65A79F722370E3BF0023308C /* VirmanView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 				65A79F5C237067660023308C /* HaberAnalizController.swift */,
 				65A79F6423709DD10023308C /* ParaCekmeController.swift */,
 				65A79F6A2370A4E30023308C /* IbanController.swift */,
+				65A79F702370E39D0023308C /* VirmanController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 			files = (
 				65A79F4E236F18C00023308C /* HomePageModel.swift in Sources */,
 				65A79F46236C7B740023308C /* RegisterModel.swift in Sources */,
+				65A79F732370E3BF0023308C /* VirmanView.swift in Sources */,
 				65A79F56236F405E0023308C /* DuyurularView.swift in Sources */,
 				65A79F5F2370677A0023308C /* HaberAnalizView.swift in Sources */,
 				65A79F4A236CDE380023308C /* LoginView.swift in Sources */,
@@ -241,9 +251,11 @@
 				65A79F31236C79590023308C /* RegisterController.swift in Sources */,
 				65A79F2D236C79590023308C /* AppDelegate.swift in Sources */,
 				65A79F63237069620023308C /* HaberAnalizTableViewCell.swift in Sources */,
+				65A79F752370E3D00023308C /* VirmanModel.swift in Sources */,
 				65A79F4C236CDE530023308C /* LoginController.swift in Sources */,
 				65A79F6D2370A4F80023308C /* IbanView.swift in Sources */,
 				65A79F6F2370A5080023308C /* IbanModel.swift in Sources */,
+				65A79F712370E39D0023308C /* VirmanController.swift in Sources */,
 				65A79F44236C7B500023308C /* RegisterView.swift in Sources */,
 				65A79F5D237067660023308C /* HaberAnalizController.swift in Sources */,
 				65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */,

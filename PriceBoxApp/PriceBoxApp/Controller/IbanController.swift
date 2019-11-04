@@ -45,8 +45,11 @@ class IbanController: UIViewController , UITextFieldDelegate {
             }
             else{
                 DispatchQueue.main.async {
-                    print("murat merahba")
-                    //                       self.performSegue(withIdentifier: "loginToHome", sender: self)
+                    let alert = UIAlertController(title: "Tebrikler!", message: "Talebiniz Başarıyla Alınmıştır.", preferredStyle: .alert)
+                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                    alert.addAction(okButton)
+                    self.present(alert, animated: true, completion: nil)
+//                    self.performSegue(withIdentifier: "loginToHome", sender: self)
                 }
             }
         })
