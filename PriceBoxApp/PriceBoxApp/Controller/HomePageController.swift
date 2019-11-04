@@ -22,6 +22,7 @@ class HomePageController: UIViewController {
         self.performSegue(withIdentifier: "homeToHaberAnaliz", sender: self)
     }
     @IBAction func paraCekBttn(_ sender: Any) {
+        self.performSegue(withIdentifier: "homeToParaCekme", sender: self)
     }
     @IBAction func profilBttn(_ sender: Any) {
     }
@@ -41,6 +42,10 @@ class HomePageController: UIViewController {
         paraCekBttn.layer.borderColor = UIColor(red:0.00, green:0.58, blue:0.51, alpha:1.0).cgColor
         profilBttn.layer.borderWidth = 2.0
         profilBttn.layer.borderColor = UIColor(red:0.00, green:0.58, blue:0.51, alpha:1.0).cgColor
+        
+        duyurularBttn.backgroundColor = UIColor(red:0.00, green:0.58, blue:0.51, alpha:0.2)
+        haberAnalizBttn.backgroundColor = UIColor(red:0.00, green:0.58, blue:0.51, alpha:0.2)
+        paraCekBttn.backgroundColor = UIColor(red:0.00, green:0.58, blue:0.51, alpha:0.2)
+        profilBttn.backgroundColor = UIColor(red:0.00, green:0.58, blue:0.51, alpha:0.2)
     }
-    
 }

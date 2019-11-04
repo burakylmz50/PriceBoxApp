@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="5oD-0Y-Cm0">
-                                <rect key="frame" x="70" y="0.0" width="274" height="128"/>
+                                <rect key="frame" x="70" y="0.0" width="274.00000000000023" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="ROi-lx-2Fn"/>
                                 </constraints>
@@ -130,23 +130,23 @@
         <!--Haber Analiz Controller-->
         <scene sceneID="kaz-vo-pk0">
             <objects>
-                <viewController id="5pi-fk-Xy2" customClass="HaberAnalizController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5pi-fk-Xy2" customClass="HaberAnalizController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PjS-xy-c2N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PriceBox_BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="69j-px-XZZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="GYo-4f-qa4">
-                                <rect key="frame" x="70" y="0.0" width="274" height="128"/>
+                                <rect key="frame" x="70" y="44" width="274.00000000000023" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="G3a-6C-52x"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mep-ga-awZ">
-                                <rect key="frame" x="0.0" y="257" width="414" height="595"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="301" width="414" height="595"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="595" id="PFy-jX-npg"/>
                                 </constraints>
@@ -160,8 +160,9 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-wg-4f3">
                                                     <rect key="frame" x="20" y="10" width="374" height="76"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -172,6 +173,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="9hh-wg-4f3" secondAttribute="trailing" constant="20" id="nhO-bl-dqc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="haberKonusuText" destination="9hh-wg-4f3" id="8kz-fc-lu4"/>
                                         </connections>
@@ -182,6 +184,17 @@
                                     <outlet property="delegate" destination="5pi-fk-Xy2" id="1CJ-1e-iKi"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aun-Xd-waC">
+                                <rect key="frame" x="0.0" y="44" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Iyu-0V-S41"/>
+                                    <constraint firstAttribute="width" constant="35" id="y4E-rF-cJ1"/>
+                                </constraints>
+                                <state key="normal" image="backBttn"/>
+                                <connections>
+                                    <action selector="backBttn:" destination="5pi-fk-Xy2" eventType="touchUpInside" id="yJm-Ma-eZ7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -190,7 +203,9 @@
                             <constraint firstItem="mep-ga-awZ" firstAttribute="trailing" secondItem="rLS-14-XUq" secondAttribute="trailing" id="Cgq-kb-hf1"/>
                             <constraint firstItem="GYo-4f-qa4" firstAttribute="top" secondItem="rLS-14-XUq" secondAttribute="top" id="Olm-U1-gBP"/>
                             <constraint firstAttribute="bottom" secondItem="69j-px-XZZ" secondAttribute="bottom" id="Pjl-14-2AT"/>
+                            <constraint firstItem="aun-Xd-waC" firstAttribute="top" secondItem="rLS-14-XUq" secondAttribute="top" id="Su2-Ta-k7V"/>
                             <constraint firstItem="rLS-14-XUq" firstAttribute="trailing" secondItem="GYo-4f-qa4" secondAttribute="trailing" constant="70" id="ZdT-PH-Ghg"/>
+                            <constraint firstItem="aun-Xd-waC" firstAttribute="leading" secondItem="rLS-14-XUq" secondAttribute="leading" id="fpn-HD-R0R"/>
                             <constraint firstItem="mep-ga-awZ" firstAttribute="top" secondItem="GYo-4f-qa4" secondAttribute="bottom" constant="129" id="g1d-uw-el4"/>
                             <constraint firstItem="69j-px-XZZ" firstAttribute="trailing" secondItem="rLS-14-XUq" secondAttribute="trailing" id="j7J-wx-1XG"/>
                             <constraint firstItem="GYo-4f-qa4" firstAttribute="leading" secondItem="rLS-14-XUq" secondAttribute="leading" constant="70" id="rm4-gr-QtC"/>
@@ -201,11 +216,12 @@
                     <navigationItem key="navigationItem" id="5Ow-8W-jBf"/>
                     <connections>
                         <outlet property="haberAnalizTableView" destination="mep-ga-awZ" id="iSb-WU-hvg"/>
+                        <segue destination="7UY-LC-FdI" kind="show" identifier="haberAnalizToHome" id="9WV-PV-RSf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQu-uO-bpB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210" y="838"/>
+            <point key="canvasLocation" x="-1345" y="838"/>
         </scene>
         <!--Home Page Controller-->
         <scene sceneID="S4v-IL-hu7">
@@ -219,7 +235,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="mXB-sV-scw">
-                                <rect key="frame" x="70" y="44" width="274" height="128"/>
+                                <rect key="frame" x="70" y="44" width="274.00000000000023" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="0g9-Rs-H3N"/>
                                 </constraints>
@@ -303,11 +319,143 @@
                         <outlet property="profilBttn" destination="C8s-rd-1zB" id="wr5-1S-eVJ"/>
                         <segue destination="Nex-ZQ-Uss" kind="show" identifier="homeToDuyurular" id="qwx-st-jOy"/>
                         <segue destination="5pi-fk-Xy2" kind="show" identifier="homeToHaberAnaliz" id="b0c-nV-IPd"/>
+                        <segue destination="WNL-Ha-Hr9" kind="show" identifier="homeToParaCekme" id="45I-0T-EPe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAx-HE-cB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-397" y="838"/>
+        </scene>
+        <!--Iban Controller-->
+        <scene sceneID="mUV-bZ-Gab">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="8qq-ND-381" customClass="IbanController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wM4-Z5-Wfe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PriceBox_BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="J4e-aF-sQ1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J4e-aF-sQ1" firstAttribute="leading" secondItem="p3I-hW-ocO" secondAttribute="leading" id="21b-wV-2tC"/>
+                            <constraint firstItem="J4e-aF-sQ1" firstAttribute="top" secondItem="wM4-Z5-Wfe" secondAttribute="top" id="HMN-zB-yRO"/>
+                            <constraint firstItem="J4e-aF-sQ1" firstAttribute="trailing" secondItem="p3I-hW-ocO" secondAttribute="trailing" id="a7L-1A-Is0"/>
+                            <constraint firstAttribute="bottom" secondItem="J4e-aF-sQ1" secondAttribute="bottom" id="gnO-N3-LIE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p3I-hW-ocO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YYA-6T-pgY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LS1-3J-JwW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1307.2463768115942" y="2233.9285714285711"/>
+        </scene>
+        <!--Para Cekme Controller-->
+        <scene sceneID="YRc-Mq-Yhl">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="WNL-Ha-Hr9" customClass="ParaCekmeController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJT-FR-UOA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PriceBox_BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="eC5-Mm-Bi4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="4le-1f-E8O">
+                                <rect key="frame" x="70" y="44" width="274.00000000000023" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="TYK-1b-jbx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGM-BQ-B4o">
+                                <rect key="frame" x="70" y="273" width="274" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="N5E-YY-AJ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="IBAN ile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ibanBttn:" destination="WNL-Ha-Hr9" eventType="touchUpInside" id="dAN-WF-gNn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d76-10-QpM">
+                                <rect key="frame" x="70" y="393" width="274" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="moU-84-ZDN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Virman ile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="virmanBttn:" destination="WNL-Ha-Hr9" eventType="touchUpInside" id="SZR-W6-qB5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcS-OT-nmF">
+                                <rect key="frame" x="70" y="513" width="274" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="swp-71-xaD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Kredi Kartı ile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="krediKartBttn:" destination="WNL-Ha-Hr9" eventType="touchUpInside" id="hXN-sU-BPA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbz-L9-vW5">
+                                <rect key="frame" x="0.0" y="44" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8JR-FX-WfO"/>
+                                    <constraint firstAttribute="width" constant="35" id="cr7-7h-WVh"/>
+                                </constraints>
+                                <state key="normal" image="backBttn"/>
+                                <connections>
+                                    <action selector="backBttn:" destination="WNL-Ha-Hr9" eventType="touchUpInside" id="TJd-eV-0Ev"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AGM-BQ-B4o" firstAttribute="leading" secondItem="70s-FH-ySu" secondAttribute="leading" constant="70" id="3Ke-VK-nW5"/>
+                            <constraint firstAttribute="bottom" secondItem="eC5-Mm-Bi4" secondAttribute="bottom" id="7ER-Mh-Nko"/>
+                            <constraint firstItem="AGM-BQ-B4o" firstAttribute="top" secondItem="4le-1f-E8O" secondAttribute="bottom" constant="101" id="FxC-BR-Nis"/>
+                            <constraint firstItem="70s-FH-ySu" firstAttribute="trailing" secondItem="GcS-OT-nmF" secondAttribute="trailing" constant="70" id="IBp-9q-nxU"/>
+                            <constraint firstItem="4le-1f-E8O" firstAttribute="leading" secondItem="70s-FH-ySu" secondAttribute="leading" constant="70" id="KeU-3j-8Du"/>
+                            <constraint firstItem="GcS-OT-nmF" firstAttribute="top" secondItem="d76-10-QpM" secondAttribute="bottom" constant="45" id="RcC-Jj-agX"/>
+                            <constraint firstItem="4le-1f-E8O" firstAttribute="top" secondItem="70s-FH-ySu" secondAttribute="top" id="ZTt-ae-Dbf"/>
+                            <constraint firstItem="d76-10-QpM" firstAttribute="leading" secondItem="70s-FH-ySu" secondAttribute="leading" constant="70" id="eCX-Kp-f8F"/>
+                            <constraint firstItem="70s-FH-ySu" firstAttribute="trailing" secondItem="AGM-BQ-B4o" secondAttribute="trailing" constant="70" id="fbl-R2-gwJ"/>
+                            <constraint firstItem="eC5-Mm-Bi4" firstAttribute="leading" secondItem="70s-FH-ySu" secondAttribute="leading" id="hme-HX-EHX"/>
+                            <constraint firstItem="70s-FH-ySu" firstAttribute="trailing" secondItem="d76-10-QpM" secondAttribute="trailing" constant="70" id="jiX-hd-BzO"/>
+                            <constraint firstItem="eC5-Mm-Bi4" firstAttribute="top" secondItem="sJT-FR-UOA" secondAttribute="top" id="k0Y-Kw-2An"/>
+                            <constraint firstItem="70s-FH-ySu" firstAttribute="trailing" secondItem="4le-1f-E8O" secondAttribute="trailing" constant="70" id="kjv-0M-Rwl"/>
+                            <constraint firstItem="tbz-L9-vW5" firstAttribute="leading" secondItem="70s-FH-ySu" secondAttribute="leading" id="mbC-XH-hRg"/>
+                            <constraint firstItem="GcS-OT-nmF" firstAttribute="leading" secondItem="70s-FH-ySu" secondAttribute="leading" constant="70" id="s5X-PL-vi9"/>
+                            <constraint firstItem="d76-10-QpM" firstAttribute="top" secondItem="AGM-BQ-B4o" secondAttribute="bottom" constant="45" id="tTA-DQ-qmO"/>
+                            <constraint firstItem="tbz-L9-vW5" firstAttribute="top" secondItem="70s-FH-ySu" secondAttribute="top" id="xPP-CJ-Z4u"/>
+                            <constraint firstItem="eC5-Mm-Bi4" firstAttribute="trailing" secondItem="70s-FH-ySu" secondAttribute="trailing" id="ysb-jQ-Xzo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="70s-FH-ySu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lnr-ff-qEC"/>
+                    <connections>
+                        <outlet property="ibanBttn" destination="AGM-BQ-B4o" id="jAh-KO-D80"/>
+                        <outlet property="krediKartBttn" destination="GcS-OT-nmF" id="udR-I2-nM2"/>
+                        <outlet property="virmanBttn" destination="d76-10-QpM" id="d3E-4s-Tm9"/>
+                        <segue destination="7UY-LC-FdI" kind="show" identifier="paraCekmeToHome" id="hq6-Bz-WeP"/>
+                        <segue destination="8qq-ND-381" kind="show" identifier="paraCekmeToIban" id="Ia5-Ha-hMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Iu-ZW-csv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397.10144927536237" y="1628.5714285714284"/>
         </scene>
         <!--Duyurular Controller-->
         <scene sceneID="RF9-7M-ZfH">
@@ -321,7 +469,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-T6-akg">
-                                <rect key="frame" x="70" y="44" width="274" height="128"/>
+                                <rect key="frame" x="70" y="44" width="274.00000000000023" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="jdV-6J-YAW"/>
                                 </constraints>
@@ -337,18 +485,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbN-Q8-EzI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbN-Q8-EzI">
                                                     <rect key="frame" x="20" y="11" width="374" height="41"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="41" id="7k8-co-TJJ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27/10/2014" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ye-WB-9NU">
                                                     <rect key="frame" x="20" y="60" width="374" height="35"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -427,7 +575,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="ZXt-Fk-6wo">
-                                <rect key="frame" x="70" y="44" width="274" height="128"/>
+                                <rect key="frame" x="70" y="44" width="274.00000000000023" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="EL2-pq-FMz"/>
                                 </constraints>
@@ -547,6 +695,6 @@
         <image name="pricebox_logo_white" width="1361" height="461"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZXx-wO-AkT"/>
+        <segue reference="hq6-Bz-WeP"/>
     </inferredMetricsTieBreakers>
 </document>

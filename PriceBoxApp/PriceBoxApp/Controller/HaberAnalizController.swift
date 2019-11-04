@@ -10,6 +10,9 @@ import UIKit
 
 class HaberAnalizController: UIViewController , UITableViewDelegate,UITableViewDataSource{
     
+    @IBAction func backBttn(_ sender: Any) {
+        self.performSegue(withIdentifier: "haberAnalizToHome", sender: self)
+    }
     var a = HaberAnalizView()
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         a.haberAnalizText.count
@@ -28,6 +31,7 @@ class HaberAnalizController: UIViewController , UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         a.haberAnalizGetir()
+        haberAnalizTableView.separatorColor = UIColor.white
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
     }

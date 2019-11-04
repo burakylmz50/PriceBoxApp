@@ -21,6 +21,9 @@ class DuyurularTableViewCell: UITableViewCell {
         //labeltext uzun yazı gelirse alt satıra geçmesini sağlıyor.
         duyuruMetin.lineBreakMode = .byWordWrapping
         tarihMetin.lineBreakMode = .byWordWrapping
+       
+        duyuruMetin.numberOfLines = 0
+         tarihMetin.numberOfLines = 0
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

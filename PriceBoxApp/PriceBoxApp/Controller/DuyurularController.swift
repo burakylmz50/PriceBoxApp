@@ -30,6 +30,7 @@ class DuyurularController: UIViewController ,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         a.duyurulariGetir()
+        tableView.separatorColor = UIColor.white
         NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
     }
     //NoficationCenter ve bu fonksiyonu -> reload datayı view içinde çağıramadığımız için kullandım.

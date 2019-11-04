@@ -29,6 +29,12 @@
 		65A79F5F2370677A0023308C /* HaberAnalizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F5E2370677A0023308C /* HaberAnalizView.swift */; };
 		65A79F61237067BB0023308C /* HaberAnalizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F60237067BB0023308C /* HaberAnalizModel.swift */; };
 		65A79F63237069620023308C /* HaberAnalizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F62237069620023308C /* HaberAnalizTableViewCell.swift */; };
+		65A79F6523709DD10023308C /* ParaCekmeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6423709DD10023308C /* ParaCekmeController.swift */; };
+		65A79F6723709DE70023308C /* ParaCekmeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6623709DE70023308C /* ParaCekmeView.swift */; };
+		65A79F6923709DF90023308C /* ParaCekmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6823709DF90023308C /* ParaCekmeModel.swift */; };
+		65A79F6B2370A4E30023308C /* IbanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6A2370A4E30023308C /* IbanController.swift */; };
+		65A79F6D2370A4F80023308C /* IbanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6C2370A4F80023308C /* IbanView.swift */; };
+		65A79F6F2370A5080023308C /* IbanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F6E2370A5080023308C /* IbanModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		65A79F5E2370677A0023308C /* HaberAnalizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberAnalizView.swift; sourceTree = "<group>"; };
 		65A79F60237067BB0023308C /* HaberAnalizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberAnalizModel.swift; sourceTree = "<group>"; };
 		65A79F62237069620023308C /* HaberAnalizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberAnalizTableViewCell.swift; sourceTree = "<group>"; };
+		65A79F6423709DD10023308C /* ParaCekmeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaCekmeController.swift; sourceTree = "<group>"; };
+		65A79F6623709DE70023308C /* ParaCekmeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaCekmeView.swift; sourceTree = "<group>"; };
+		65A79F6823709DF90023308C /* ParaCekmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaCekmeModel.swift; sourceTree = "<group>"; };
+		65A79F6A2370A4E30023308C /* IbanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanController.swift; sourceTree = "<group>"; };
+		65A79F6C2370A4F80023308C /* IbanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanView.swift; sourceTree = "<group>"; };
+		65A79F6E2370A5080023308C /* IbanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,8 @@
 				65A79F4D236F18C00023308C /* HomePageModel.swift */,
 				65A79F58236F40790023308C /* DuyurularModel.swift */,
 				65A79F60237067BB0023308C /* HaberAnalizModel.swift */,
+				65A79F6823709DF90023308C /* ParaCekmeModel.swift */,
+				65A79F6E2370A5080023308C /* IbanModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +137,8 @@
 				65A79F5A236F80460023308C /* DuyurularTableViewCell.swift */,
 				65A79F5E2370677A0023308C /* HaberAnalizView.swift */,
 				65A79F62237069620023308C /* HaberAnalizTableViewCell.swift */,
+				65A79F6623709DE70023308C /* ParaCekmeView.swift */,
+				65A79F6C2370A4F80023308C /* IbanView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,6 +151,8 @@
 				65A79F51236F18E90023308C /* HomePageController.swift */,
 				65A79F53236F3F640023308C /* DuyurularController.swift */,
 				65A79F5C237067660023308C /* HaberAnalizController.swift */,
+				65A79F6423709DD10023308C /* ParaCekmeController.swift */,
+				65A79F6A2370A4E30023308C /* IbanController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +234,7 @@
 				65A79F5F2370677A0023308C /* HaberAnalizView.swift in Sources */,
 				65A79F4A236CDE380023308C /* LoginView.swift in Sources */,
 				65A79F48236CDE270023308C /* LoginModel.swift in Sources */,
+				65A79F6723709DE70023308C /* ParaCekmeView.swift in Sources */,
 				65A79F50236F18CF0023308C /* HomePageView.swift in Sources */,
 				65A79F61237067BB0023308C /* HaberAnalizModel.swift in Sources */,
 				65A79F54236F3F640023308C /* DuyurularController.swift in Sources */,
@@ -223,12 +242,17 @@
 				65A79F2D236C79590023308C /* AppDelegate.swift in Sources */,
 				65A79F63237069620023308C /* HaberAnalizTableViewCell.swift in Sources */,
 				65A79F4C236CDE530023308C /* LoginController.swift in Sources */,
+				65A79F6D2370A4F80023308C /* IbanView.swift in Sources */,
+				65A79F6F2370A5080023308C /* IbanModel.swift in Sources */,
 				65A79F44236C7B500023308C /* RegisterView.swift in Sources */,
 				65A79F5D237067660023308C /* HaberAnalizController.swift in Sources */,
 				65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */,
+				65A79F6B2370A4E30023308C /* IbanController.swift in Sources */,
 				65A79F52236F18E90023308C /* HomePageController.swift in Sources */,
+				65A79F6523709DD10023308C /* ParaCekmeController.swift in Sources */,
 				65A79F5B236F80460023308C /* DuyurularTableViewCell.swift in Sources */,
 				65A79F59236F40790023308C /* DuyurularModel.swift in Sources */,
+				65A79F6923709DF90023308C /* ParaCekmeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
