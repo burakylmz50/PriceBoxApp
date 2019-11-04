@@ -127,6 +127,86 @@
             </objects>
             <point key="canvasLocation" x="363.768115942029" y="128.57142857142856"/>
         </scene>
+        <!--Haber Analiz Controller-->
+        <scene sceneID="kaz-vo-pk0">
+            <objects>
+                <viewController id="5pi-fk-Xy2" customClass="HaberAnalizController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PjS-xy-c2N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PriceBox_BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="69j-px-XZZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pricebox_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="GYo-4f-qa4">
+                                <rect key="frame" x="70" y="0.0" width="274" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="G3a-6C-52x"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mep-ga-awZ">
+                                <rect key="frame" x="0.0" y="257" width="414" height="595"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="595" id="PFy-jX-npg"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="Fie-Xz-VPH" customClass="HaberAnalizTableViewCell" customModule="PriceBoxApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fie-Xz-VPH" id="fvL-GR-iNe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-wg-4f3">
+                                                    <rect key="frame" x="20" y="10" width="374" height="76"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="9hh-wg-4f3" secondAttribute="bottom" constant="10" id="91V-Nd-w6U"/>
+                                                <constraint firstItem="9hh-wg-4f3" firstAttribute="top" secondItem="fvL-GR-iNe" secondAttribute="top" constant="10" id="Ecs-U5-vsb"/>
+                                                <constraint firstItem="9hh-wg-4f3" firstAttribute="leading" secondItem="fvL-GR-iNe" secondAttribute="leading" constant="20" id="YI0-wa-nCt"/>
+                                                <constraint firstAttribute="trailing" secondItem="9hh-wg-4f3" secondAttribute="trailing" constant="20" id="nhO-bl-dqc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="haberKonusuText" destination="9hh-wg-4f3" id="8kz-fc-lu4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5pi-fk-Xy2" id="LsC-20-k3E"/>
+                                    <outlet property="delegate" destination="5pi-fk-Xy2" id="1CJ-1e-iKi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="69j-px-XZZ" firstAttribute="top" secondItem="PjS-xy-c2N" secondAttribute="top" id="8P4-eF-h3W"/>
+                            <constraint firstItem="mep-ga-awZ" firstAttribute="leading" secondItem="rLS-14-XUq" secondAttribute="leading" id="9Zp-Bi-YVx"/>
+                            <constraint firstItem="mep-ga-awZ" firstAttribute="trailing" secondItem="rLS-14-XUq" secondAttribute="trailing" id="Cgq-kb-hf1"/>
+                            <constraint firstItem="GYo-4f-qa4" firstAttribute="top" secondItem="rLS-14-XUq" secondAttribute="top" id="Olm-U1-gBP"/>
+                            <constraint firstAttribute="bottom" secondItem="69j-px-XZZ" secondAttribute="bottom" id="Pjl-14-2AT"/>
+                            <constraint firstItem="rLS-14-XUq" firstAttribute="trailing" secondItem="GYo-4f-qa4" secondAttribute="trailing" constant="70" id="ZdT-PH-Ghg"/>
+                            <constraint firstItem="mep-ga-awZ" firstAttribute="top" secondItem="GYo-4f-qa4" secondAttribute="bottom" constant="129" id="g1d-uw-el4"/>
+                            <constraint firstItem="69j-px-XZZ" firstAttribute="trailing" secondItem="rLS-14-XUq" secondAttribute="trailing" id="j7J-wx-1XG"/>
+                            <constraint firstItem="GYo-4f-qa4" firstAttribute="leading" secondItem="rLS-14-XUq" secondAttribute="leading" constant="70" id="rm4-gr-QtC"/>
+                            <constraint firstItem="69j-px-XZZ" firstAttribute="leading" secondItem="rLS-14-XUq" secondAttribute="leading" id="upM-se-0E0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rLS-14-XUq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Ow-8W-jBf"/>
+                    <connections>
+                        <outlet property="haberAnalizTableView" destination="mep-ga-awZ" id="iSb-WU-hvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQu-uO-bpB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1210" y="838"/>
+        </scene>
         <!--Home Page Controller-->
         <scene sceneID="S4v-IL-hu7">
             <objects>
@@ -222,6 +302,7 @@
                         <outlet property="paraCekBttn" destination="OCo-gh-xaa" id="YNF-sZ-YW0"/>
                         <outlet property="profilBttn" destination="C8s-rd-1zB" id="wr5-1S-eVJ"/>
                         <segue destination="Nex-ZQ-Uss" kind="show" identifier="homeToDuyurular" id="qwx-st-jOy"/>
+                        <segue destination="5pi-fk-Xy2" kind="show" identifier="homeToHaberAnaliz" id="b0c-nV-IPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAx-HE-cB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -294,6 +375,17 @@
                                     <outlet property="delegate" destination="Nex-ZQ-Uss" id="mpc-SL-c4X"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQK-Je-9Cl">
+                                <rect key="frame" x="0.0" y="44" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="ntv-ug-O9n"/>
+                                    <constraint firstAttribute="height" constant="35" id="vrh-M9-oqJ"/>
+                                </constraints>
+                                <state key="normal" image="backBttn"/>
+                                <connections>
+                                    <action selector="backButton:" destination="Nex-ZQ-Uss" eventType="touchUpInside" id="J4s-ed-mZU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -305,9 +397,11 @@
                             <constraint firstItem="HX9-JP-Qkd" firstAttribute="top" secondItem="0bk-T6-akg" secondAttribute="bottom" constant="96" id="XbG-cn-Odi"/>
                             <constraint firstItem="HX9-JP-Qkd" firstAttribute="leading" secondItem="lee-h9-2Ip" secondAttribute="leading" id="Ygj-SK-B5a"/>
                             <constraint firstAttribute="bottom" secondItem="HX9-JP-Qkd" secondAttribute="bottom" id="aTy-Wx-L1R"/>
+                            <constraint firstItem="kQK-Je-9Cl" firstAttribute="top" secondItem="lee-h9-2Ip" secondAttribute="top" id="ayL-Hv-mvM"/>
                             <constraint firstItem="qJJ-fA-ypV" firstAttribute="trailing" secondItem="lee-h9-2Ip" secondAttribute="trailing" id="enp-8A-sFC"/>
                             <constraint firstItem="HX9-JP-Qkd" firstAttribute="trailing" secondItem="lee-h9-2Ip" secondAttribute="trailing" id="k3v-Vn-RCl"/>
                             <constraint firstItem="0bk-T6-akg" firstAttribute="top" secondItem="lee-h9-2Ip" secondAttribute="top" id="kP7-BD-EuQ"/>
+                            <constraint firstItem="kQK-Je-9Cl" firstAttribute="leading" secondItem="lee-h9-2Ip" secondAttribute="leading" id="qj7-mR-mqQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lee-h9-2Ip"/>
                     </view>
@@ -447,6 +541,7 @@
     </scenes>
     <resources>
         <image name="PriceBox_BackGround" width="1440" height="2960"/>
+        <image name="backBttn" width="96" height="96"/>
         <image name="closeicon60px" width="60" height="60"/>
         <image name="person" width="512" height="512"/>
         <image name="pricebox_logo_white" width="1361" height="461"/>

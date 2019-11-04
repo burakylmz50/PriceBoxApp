@@ -15,13 +15,11 @@ class HomePageController: UIViewController {
     @IBOutlet weak var paraCekBttn: UIButton!
     @IBOutlet weak var profilBttn: UIButton!
     
-    var c = DuyurularView()
     @IBAction func duyurularBttn(_ sender: Any) {
-//        c.duyurulariGetir()
         self.performSegue(withIdentifier: "homeToDuyurular", sender: self)
-       
     }
     @IBAction func haberAnalizBttn(_ sender: Any) {
+        self.performSegue(withIdentifier: "homeToHaberAnaliz", sender: self)
     }
     @IBAction func paraCekBttn(_ sender: Any) {
     }
