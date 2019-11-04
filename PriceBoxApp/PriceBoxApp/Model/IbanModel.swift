@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct IbanModel : Codable {
+let response : Bool?
+let msg : String?
+
+}
+
