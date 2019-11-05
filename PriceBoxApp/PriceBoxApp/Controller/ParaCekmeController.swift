@@ -15,10 +15,13 @@ class ParaCekmeController: UIViewController {
     }
     
     @IBAction func ibanBttn(_ sender: Any) {
+        self.performSegue(withIdentifier: "paraCekmeToIban", sender: self)
     }
     @IBAction func virmanBttn(_ sender: Any) {
+        self.performSegue(withIdentifier: "paraCekmeToVirman", sender: self)
     }
     @IBAction func krediKartBttn(_ sender: Any) {
+        self.performSegue(withIdentifier: "paraCekmeToKrediKart", sender: self)
     }
 
     @IBOutlet weak var ibanBttn: UIButton!

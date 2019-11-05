@@ -30,6 +30,9 @@ class IbanController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var aliciAdiTxt: UITextField!
     @IBOutlet weak var amountTxt: UITextField!
     @IBOutlet weak var onaylaBttn: UIButton!
+    @IBAction func backButton(_ sender: Any) {
+          self.performSegue(withIdentifier: "IbanToParaCekme", sender: self)
+    }
     
     @IBAction func onaylaBttn(_ sender: Any) {
         self.ibanView.createUser2(ibanBankName:bankaAdiTxt.text!, ibanRecipientName: aliciAdiTxt.text!, ibanNumber: ibanNoTxt.text!, amountTxt: amountTxt.text!,priceFormat:secim, completionHandler: {
@@ -124,9 +127,11 @@ extension UITextField {
     func addDoneCancelToolbar(onDone: (target: Any, action: Selector)? = nil) {
         let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
         
-        let toolbar: UIToolbar = UIToolbar()
+        let toolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0,
+        y: 50,
+        width: 100,
+        height: 100))
         toolbar.barStyle = .default
-        
         toolbar.items = [
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),
             UIBarButtonItem(title: "Tamam", style: .done, target: onDone.target, action: onDone.action)

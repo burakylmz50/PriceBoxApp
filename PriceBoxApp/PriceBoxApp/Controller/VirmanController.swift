@@ -16,6 +16,9 @@ class VirmanController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var tutarTxt: UITextField!
     @IBOutlet weak var onaylaBttn: UIButton!
     
+    @IBAction func backButton(_ sender: Any) {
+          self.performSegue(withIdentifier: "VirmanToParaCekme", sender: self)
+    }
     @IBAction func onaylaBttn(_ sender: Any) {
         self.virmanView.createUser2( virmanFrom: alinacakHesapNoTxt.text!, virmanTo: hedefHesapNoTxt.text!, amount: tutarTxt.text!, completionHandler: {
             Dictionary in print(Dictionary)

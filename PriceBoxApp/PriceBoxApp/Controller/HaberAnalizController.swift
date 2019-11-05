@@ -21,9 +21,12 @@ class HaberAnalizController: UIViewController , UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HaberAnalizTableViewCell
         cell.haberKonusuText.text = a.haberAnalizText[indexPath.row].baslik
-        
-        
         return cell
+    }
+    
+    //    Haberlere tıklandığında neler yapacağı?
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
     
     

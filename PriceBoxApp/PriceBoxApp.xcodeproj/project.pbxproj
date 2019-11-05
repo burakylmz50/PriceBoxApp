@@ -38,6 +38,9 @@
 		65A79F712370E39D0023308C /* VirmanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F702370E39D0023308C /* VirmanController.swift */; };
 		65A79F732370E3BF0023308C /* VirmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F722370E3BF0023308C /* VirmanView.swift */; };
 		65A79F752370E3D00023308C /* VirmanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F742370E3D00023308C /* VirmanModel.swift */; };
+		65A79F772370F0CF0023308C /* KrediKartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F762370F0CF0023308C /* KrediKartController.swift */; };
+		65A79F792370F0E90023308C /* KrediKartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F782370F0E90023308C /* KrediKartView.swift */; };
+		65A79F7B2370F0FA0023308C /* KrediKartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F7A2370F0FA0023308C /* KrediKartModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		65A79F702370E39D0023308C /* VirmanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirmanController.swift; sourceTree = "<group>"; };
 		65A79F722370E3BF0023308C /* VirmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirmanView.swift; sourceTree = "<group>"; };
 		65A79F742370E3D00023308C /* VirmanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirmanModel.swift; sourceTree = "<group>"; };
+		65A79F762370F0CF0023308C /* KrediKartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediKartController.swift; sourceTree = "<group>"; };
+		65A79F782370F0E90023308C /* KrediKartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediKartView.swift; sourceTree = "<group>"; };
+		65A79F7A2370F0FA0023308C /* KrediKartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediKartModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				65A79F6823709DF90023308C /* ParaCekmeModel.swift */,
 				65A79F6E2370A5080023308C /* IbanModel.swift */,
 				65A79F742370E3D00023308C /* VirmanModel.swift */,
+				65A79F7A2370F0FA0023308C /* KrediKartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				65A79F6623709DE70023308C /* ParaCekmeView.swift */,
 				65A79F6C2370A4F80023308C /* IbanView.swift */,
 				65A79F722370E3BF0023308C /* VirmanView.swift */,
+				65A79F782370F0E90023308C /* KrediKartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 				65A79F6423709DD10023308C /* ParaCekmeController.swift */,
 				65A79F6A2370A4E30023308C /* IbanController.swift */,
 				65A79F702370E39D0023308C /* VirmanController.swift */,
+				65A79F762370F0CF0023308C /* KrediKartController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A79F4E236F18C00023308C /* HomePageModel.swift in Sources */,
+				65A79F772370F0CF0023308C /* KrediKartController.swift in Sources */,
 				65A79F46236C7B740023308C /* RegisterModel.swift in Sources */,
 				65A79F732370E3BF0023308C /* VirmanView.swift in Sources */,
 				65A79F56236F405E0023308C /* DuyurularView.swift in Sources */,
@@ -255,11 +265,13 @@
 				65A79F4C236CDE530023308C /* LoginController.swift in Sources */,
 				65A79F6D2370A4F80023308C /* IbanView.swift in Sources */,
 				65A79F6F2370A5080023308C /* IbanModel.swift in Sources */,
+				65A79F7B2370F0FA0023308C /* KrediKartModel.swift in Sources */,
 				65A79F712370E39D0023308C /* VirmanController.swift in Sources */,
 				65A79F44236C7B500023308C /* RegisterView.swift in Sources */,
 				65A79F5D237067660023308C /* HaberAnalizController.swift in Sources */,
 				65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */,
 				65A79F6B2370A4E30023308C /* IbanController.swift in Sources */,
+				65A79F792370F0E90023308C /* KrediKartView.swift in Sources */,
 				65A79F52236F18E90023308C /* HomePageController.swift in Sources */,
 				65A79F6523709DD10023308C /* ParaCekmeController.swift in Sources */,
 				65A79F5B236F80460023308C /* DuyurularTableViewCell.swift in Sources */,
