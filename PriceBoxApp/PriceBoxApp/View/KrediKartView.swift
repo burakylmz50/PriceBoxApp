@@ -36,7 +36,7 @@ class KrediKartView{
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 //        request.addValue("application/json", forHTTPHeaderField: "Accept")
-         request.addValue("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRiYTk1YWVkZjA1ODIxMDNjMjk0ZmJlIn0sImlhdCI6MTU3Mjk1NjMzMSwiZXhwIjoxNTcyOTkyMzMxfQ.gsnrCEHKD5fvfD0HWQffp0Z3NCstCqvvr647-u3OPvI", forHTTPHeaderField: "x-auth-token")
+         request.addValue(tokenDonus, forHTTPHeaderField: "x-auth-token")
         
         let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
             

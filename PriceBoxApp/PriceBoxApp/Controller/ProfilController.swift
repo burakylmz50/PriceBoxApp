@@ -17,9 +17,13 @@ class ProfilController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var sifreyiDegistirBttn: UIButton!
     @IBOutlet weak var cikisYapBttn: UIButton!
     
+    @IBAction func backBttn(_ sender: Any) {
+          self.performSegue(withIdentifier: "profilToHomePage", sender: self)
+    }
     @IBAction func sifreyiDegistirBttn(_ sender: Any) {
     }
     @IBAction func cikisYapBttn(_ sender: Any) {
+         self.performSegue(withIdentifier: "profilToLogin", sender: self)
     }
     
     override func viewDidLoad() {

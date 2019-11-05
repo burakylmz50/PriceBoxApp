@@ -25,6 +25,7 @@ class HomePageController: UIViewController {
         self.performSegue(withIdentifier: "homeToParaCekme", sender: self)
     }
     @IBAction func profilBttn(_ sender: Any) {
+           self.performSegue(withIdentifier: "homeToProfil", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

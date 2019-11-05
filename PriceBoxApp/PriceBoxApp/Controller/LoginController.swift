@@ -32,8 +32,6 @@ class LoginController: UIViewController , UITextFieldDelegate {
                 }
             }
         })
-        
-        
     }
     var loginView = LoginView()
     
@@ -45,6 +43,9 @@ class LoginController: UIViewController , UITextFieldDelegate {
     func padding(){
         emailAdresi.delegate = self
         sifre.delegate = self
+        
+        //        yazı girerken otomatik düzeltmeyi kapatıyor.
+        emailAdresi.autocorrectionType = .no
         
         emailAdresi.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 10)
         sifre.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 10)

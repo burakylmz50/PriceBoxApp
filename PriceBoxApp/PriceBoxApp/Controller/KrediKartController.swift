@@ -67,7 +67,10 @@ class KrediKartController: UIViewController ,UIPickerViewDelegate,UIPickerViewDa
     }
     
     func dismissPickerView(){
-        let toolbar = UIToolbar()
+        let toolbar = UIToolbar(frame: CGRect(x: 0,
+        y: 50,
+        width: 100,
+        height: 100))
         toolbar.sizeToFit()
         
         let doneButton = UIBarButtonItem(title: "Tamam", style: .plain, target: self, action: #selector(self.dismissKeyboard))

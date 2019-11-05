@@ -36,7 +36,7 @@ class IbanView{
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 //        request.addValue("application/json", forHTTPHeaderField: "Accept")
-         request.addValue("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRiYTk1YWVkZjA1ODIxMDNjMjk0ZmJlIn0sImlhdCI6MTU3Mjg3NzU0MSwiZXhwIjoxNTcyOTEzNTQxfQ.600iMoDUVcWDrFgeQMxVrjDeXRgAt-SozWjkPU69rpU", forHTTPHeaderField: "x-auth-token")
+         request.addValue(tokenDonus, forHTTPHeaderField: "x-auth-token")
         
         let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
             
