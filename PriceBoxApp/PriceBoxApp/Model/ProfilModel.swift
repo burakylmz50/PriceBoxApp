@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct ProfilModel : Codable {
+    let msg : String?
+    let respons : Bool?
+}
+
+struct ProfilModelKullaniciData :Codable{
+    let _id : String?
+    let name : String?
+    let email : String?
+    let userNumber : String?
+    let date : String?
+}

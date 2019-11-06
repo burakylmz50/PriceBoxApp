@@ -10,6 +10,9 @@
 		654C93572371E69800435EF1 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C93562371E69800435EF1 /* ProfilController.swift */; };
 		654C93592371E6A500435EF1 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C93582371E6A500435EF1 /* ProfilView.swift */; };
 		654C935B2371E6B000435EF1 /* ProfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C935A2371E6B000435EF1 /* ProfilModel.swift */; };
+		654C935D2372248E00435EF1 /* SifremiUnuttumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C935C2372248E00435EF1 /* SifremiUnuttumController.swift */; };
+		654C935F2372249B00435EF1 /* SifremiUnuttumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C935E2372249B00435EF1 /* SifremiUnuttumView.swift */; };
+		654C9361237224A500435EF1 /* SifremiUnuttumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C9360237224A500435EF1 /* SifremiUnuttumModel.swift */; };
 		65A79F2D236C79590023308C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F2C236C79590023308C /* AppDelegate.swift */; };
 		65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F2E236C79590023308C /* SceneDelegate.swift */; };
 		65A79F31236C79590023308C /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A79F30236C79590023308C /* RegisterController.swift */; };
@@ -50,6 +53,9 @@
 		654C93562371E69800435EF1 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		654C93582371E6A500435EF1 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		654C935A2371E6B000435EF1 /* ProfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilModel.swift; sourceTree = "<group>"; };
+		654C935C2372248E00435EF1 /* SifremiUnuttumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumController.swift; sourceTree = "<group>"; };
+		654C935E2372249B00435EF1 /* SifremiUnuttumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumView.swift; sourceTree = "<group>"; };
+		654C9360237224A500435EF1 /* SifremiUnuttumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumModel.swift; sourceTree = "<group>"; };
 		65A79F29236C79590023308C /* PriceBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A79F2C236C79590023308C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A79F2E236C79590023308C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 				65A79F742370E3D00023308C /* VirmanModel.swift */,
 				65A79F7A2370F0FA0023308C /* KrediKartModel.swift */,
 				654C935A2371E6B000435EF1 /* ProfilModel.swift */,
+				654C9360237224A500435EF1 /* SifremiUnuttumModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 				65A79F722370E3BF0023308C /* VirmanView.swift */,
 				65A79F782370F0E90023308C /* KrediKartView.swift */,
 				654C93582371E6A500435EF1 /* ProfilView.swift */,
+				654C935E2372249B00435EF1 /* SifremiUnuttumView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 				65A79F702370E39D0023308C /* VirmanController.swift */,
 				65A79F762370F0CF0023308C /* KrediKartController.swift */,
 				654C93562371E69800435EF1 /* ProfilController.swift */,
+				654C935C2372248E00435EF1 /* SifremiUnuttumController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +274,7 @@
 				65A79F4A236CDE380023308C /* LoginView.swift in Sources */,
 				65A79F48236CDE270023308C /* LoginModel.swift in Sources */,
 				654C935B2371E6B000435EF1 /* ProfilModel.swift in Sources */,
+				654C935D2372248E00435EF1 /* SifremiUnuttumController.swift in Sources */,
 				65A79F6723709DE70023308C /* ParaCekmeView.swift in Sources */,
 				65A79F50236F18CF0023308C /* HomePageView.swift in Sources */,
 				654C93592371E6A500435EF1 /* ProfilView.swift in Sources */,
@@ -278,9 +288,11 @@
 				65A79F6D2370A4F80023308C /* IbanView.swift in Sources */,
 				65A79F6F2370A5080023308C /* IbanModel.swift in Sources */,
 				65A79F7B2370F0FA0023308C /* KrediKartModel.swift in Sources */,
+				654C9361237224A500435EF1 /* SifremiUnuttumModel.swift in Sources */,
 				65A79F712370E39D0023308C /* VirmanController.swift in Sources */,
 				65A79F44236C7B500023308C /* RegisterView.swift in Sources */,
 				65A79F5D237067660023308C /* HaberAnalizController.swift in Sources */,
+				654C935F2372249B00435EF1 /* SifremiUnuttumView.swift in Sources */,
 				65A79F2F236C79590023308C /* SceneDelegate.swift in Sources */,
 				65A79F6B2370A4E30023308C /* IbanController.swift in Sources */,
 				65A79F792370F0E90023308C /* KrediKartView.swift in Sources */,

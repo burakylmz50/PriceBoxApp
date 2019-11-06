@@ -18,18 +18,55 @@ class ProfilController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var cikisYapBttn: UIButton!
     
     @IBAction func backBttn(_ sender: Any) {
-          self.performSegue(withIdentifier: "profilToHomePage", sender: self)
+        self.performSegue(withIdentifier: "profilToHomePage", sender: self)
     }
     @IBAction func sifreyiDegistirBttn(_ sender: Any) {
+        if yeniSifreTxt.text == yeniSifreTekrarTxt.text{
+            self.profilView.sifremiDegistir(password: yeniSifreTxt.text!, oldPassword: sifreTxt.text!, completionHandler: {
+                Dictionary in print(Dictionary)
+                if(Dictionary == false){
+                    DispatchQueue.main.async {
+                        print("ayse merhaba")
+                        let alert = UIAlertController(title: "Uyarı", message: self.profilView.errorMesaj, preferredStyle: .alert)
+                        let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                        alert.addAction(okButton)
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+                else{
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Parola", message: "Parolalar uyuşmamaktadır.", preferredStyle: .alert)
+                        let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                        alert.addAction(okButton)
+                        self.present(alert, animated: true, completion: nil)
+                        //                    self.performSegue(withIdentifier: "loginToHome", sender: self)
+                    }
+                }
+            })
+        }
+        else{
+            let alert = UIAlertController(title: "Parola", message: "Parolalar uyuşmamaktadır.", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+            alert.addAction(okButton)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     @IBAction func cikisYapBttn(_ sender: Any) {
-         self.performSegue(withIdentifier: "profilToLogin", sender: self)
+        self.performSegue(withIdentifier: "profilToLogin", sender: self)
     }
-    
+    var profilView = ProfilView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        padding()
         
+        profilView.kullaniciBilgileriniGetir( completion: { response in
+            DispatchQueue.main.async {
+                self.KullaniciAdSoyad.text = response.first
+            }
+            
+            
+        })
+        padding()
     }
     func padding(){
         

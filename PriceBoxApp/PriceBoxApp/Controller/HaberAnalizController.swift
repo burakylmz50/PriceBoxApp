@@ -34,7 +34,7 @@ class HaberAnalizController: UIViewController , UITableViewDelegate,UITableViewD
     @IBOutlet weak var haberAnalizTableView: UITableView!
     
     override func viewDidLoad() {
-        let result : Int = (a.haberAnalizText.count) / 4
+
         a.haberAnalizGetir()
         haberAnalizTableView.separatorColor = UIColor.white
         super.viewDidLoad()

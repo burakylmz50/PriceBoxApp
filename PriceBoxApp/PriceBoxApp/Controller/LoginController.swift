@@ -14,6 +14,7 @@ class LoginController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var sifre: UITextField!
     @IBOutlet weak var girisYap: UIButton!
     @IBAction func sifremiUnuttum(_ sender: Any) {
+            self.performSegue(withIdentifier: "loginToSifremiUnuttum", sender: self)
     }
     @IBAction func girisYap(_ sender: Any) {
         self.loginView.createUser(emailAdresi:emailAdresi.text! , sifre : sifre.text!, completionHandler: {

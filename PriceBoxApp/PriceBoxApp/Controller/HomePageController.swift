@@ -29,6 +29,7 @@ class HomePageController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.setNavigationBarHidden(true, animated: false)
         duyurularBttn.layer.cornerRadius = 11
         haberAnalizBttn.layer.cornerRadius = 11
