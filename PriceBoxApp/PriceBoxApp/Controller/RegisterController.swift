@@ -19,10 +19,40 @@ class RegisterController: UIViewController , UITextFieldDelegate{
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func kayitOl(_ sender: Any) {
+        self.showSpinner(onView: self.view)
         if(sifre.text == sifreTekrari.text){
-            self.registerView.createUser(adSoyad: adSoyad.text!, emailAdresi: emailAdresi.text!, sifre: sifre.text!)
+            self.registerView.createUser(adSoyad: adSoyad.text!, emailAdresi: emailAdresi.text!, sifre: sifre.text!, completionHandler: {
+                Dictionary in print(Dictionary)
+                if(Dictionary == true){
+                    DispatchQueue.main.async {
+                        self.removeSpinner()
+                        let alert = UIAlertController(title: "Uyarı", message: self.registerView.errMsg, preferredStyle: .alert)
+                        let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: {
+                            (ACTION) in
+                            DispatchQueue.main.async {
+                                self.removeSpinner()
+                                self.performSegue(withIdentifier: "registerToLogin", sender: self)
+                            }
+                        })
+                        self.present(alert, animated: true, completion: nil)
+                        alert.addAction(okButton)
+                        
+                    }
+                }
+                else{
+                    DispatchQueue.main.async {
+                        self.removeSpinner()
+                        let alert = UIAlertController(title: "Uyarı", message: self.registerView.errMsg, preferredStyle: .alert)
+                        let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                        alert.addAction(okButton)
+                        self.present(alert, animated: true, completion: nil)
+                        self.removeSpinner()
+                    }
+                }
+            })
         }
         else{
+            self.removeSpinner()
             let alert = UIAlertController(title: "Uyarı", message: "Parolalar uyuşmamaktadır.", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
             alert.addAction(okButton)
@@ -44,6 +74,9 @@ class RegisterController: UIViewController , UITextFieldDelegate{
         emailAdresi.delegate = self
         sifre.delegate = self
         sifreTekrari.delegate = self
+        
+        //Ad Soyad textfield in ilk harfleri büyük yazılsın
+        adSoyad.autocapitalizationType = .words
         
         adSoyad.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 10)
         emailAdresi.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 10)

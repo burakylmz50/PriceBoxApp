@@ -18,7 +18,7 @@ class ProfilView{
         
         let parameters = ["password": password as Any ,"oldPassword": oldPassword as Any  ] as [String : Any]
         
-        let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/pass")! //change the url
+        let url = URL(string: "https://priceboxfx.azurewebsites.net/api/pass")! //change the url
         
         let session = URLSession.shared
         
@@ -80,7 +80,7 @@ class ProfilView{
     var burakasd : String = ""
     func kullaniciBilgileriniGetir( completion: @escaping (_ success: [String]) -> Void) {
             
-            let urlString = "https://glacial-thicket-60288.herokuapp.com/api/auth"
+            let urlString = "https://priceboxfx.azurewebsites.net/api/auth"
             let session = URLSession.shared
             let url = URL(string: urlString)!
             var request = URLRequest(url: url)

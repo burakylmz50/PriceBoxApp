@@ -13,7 +13,7 @@ class DuyurularView{
     
     func duyurulariGetir(){
         
-        let urlString = "https://glacial-thicket-60288.herokuapp.com/api/announcement"
+        let urlString = "https://priceboxfx.azurewebsites.net/api/announcement"
         let session = URLSession.shared
         let url = URL(string: urlString)!
         var request = URLRequest(url: url)

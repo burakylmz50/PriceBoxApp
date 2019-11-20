@@ -13,7 +13,7 @@ class HaberAnalizView{
     
     func haberAnalizGetir(){
         
-        let urlString = "https://glacial-thicket-60288.herokuapp.com/api/analyze"
+        let urlString = "https://priceboxfx.azurewebsites.net/api/analyze"
         let session = URLSession.shared
         let url = URL(string: urlString)!
         var request = URLRequest(url: url)

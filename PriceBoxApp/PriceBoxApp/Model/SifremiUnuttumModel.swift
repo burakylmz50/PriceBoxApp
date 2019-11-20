@@ -9,3 +9,7 @@
 import Foundation
 
 
+struct SifremiUnuttumModel : Codable {
+    let msg : String?
+    let response : Bool?
+}

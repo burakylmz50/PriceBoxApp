@@ -9,18 +9,18 @@
 import Foundation
 import UIKit
 
-  var tokenDonus : String = ""  // Kullanıcı giris yaptıktan sonra dönen token değeri.
+var tokenDonus : String = ""  // Kullanıcı giris yaptıktan sonra dönen token değeri.
 
 class LoginView:UIViewController{
     var emailAdresi : String = ""
     var sifre : String = ""
-  
+    
     var errorMessage : String = ""
     func createUser(emailAdresi:String,sifre:String,completionHandler:@escaping (Bool) -> ()){
         
         let parameters = ["email": emailAdresi as Any ,  "password": sifre as Any] as [String : Any]
         
-        let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/auth")! //change the url
+        let url = URL(string: "https://priceboxfx.azurewebsites.net/api/auth")! //change the url
         
         let session = URLSession.shared
         

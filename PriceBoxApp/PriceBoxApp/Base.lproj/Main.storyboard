@@ -121,6 +121,7 @@
                         <outlet property="kayitOl" destination="SLn-Je-37V" id="09B-7P-4Zc"/>
                         <outlet property="sifre" destination="4m0-bA-shC" id="vJB-22-DV3"/>
                         <outlet property="sifreTekrari" destination="KHH-o4-fKZ" id="wlo-ON-fiO"/>
+                        <segue destination="FiQ-4g-ZEi" kind="show" identifier="registerToLogin" id="v8g-de-7aM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -752,7 +753,7 @@
                                     <action selector="backBttn:" destination="C2O-IQ-dTG" eventType="touchUpInside" id="Gzd-io-b5r"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYA-Jk-7Ze">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYA-Jk-7Ze">
                                 <rect key="frame" x="70" y="180" width="274" height="34"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -903,7 +904,9 @@
                                     <constraint firstAttribute="height" constant="60" id="kzO-yG-Izt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Şifremi Sıfırla"/>
+                                <state key="normal" title="Şifremi Sıfırla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="şifremiSifirla:" destination="7g2-If-2La" eventType="touchUpInside" id="ZdG-hL-fk5"/>
                                 </connections>

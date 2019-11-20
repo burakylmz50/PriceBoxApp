@@ -31,28 +31,30 @@ class IbanController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var amountTxt: UITextField!
     @IBOutlet weak var onaylaBttn: UIButton!
     @IBAction func backButton(_ sender: Any) {
-          self.performSegue(withIdentifier: "IbanToParaCekme", sender: self)
+        self.performSegue(withIdentifier: "IbanToParaCekme", sender: self)
     }
     
     @IBAction func onaylaBttn(_ sender: Any) {
+        self.showSpinner(onView: self.view)
         self.ibanView.createUser2(ibanBankName:bankaAdiTxt.text!, ibanRecipientName: aliciAdiTxt.text!, ibanNumber: ibanNoTxt.text!, amountTxt: amountTxt.text!,priceFormat:secim, completionHandler: {
             Dictionary in print(Dictionary)
             if(Dictionary == false){
                 DispatchQueue.main.async {
-                    print("ayse merhaba")
-                    //                       let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
-                    //                       let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
-                    //                       alert.addAction(okButton)
-                    //                       self.present(alert, animated: true, completion: nil)
+                    self.removeSpinner()
+                    let alert = UIAlertController(title: "Uyarı", message: self.ibanView.errorMessage, preferredStyle: .alert)
+                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                    alert.addAction(okButton)
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
             else{
                 DispatchQueue.main.async {
+                     self.removeSpinner()
                     let alert = UIAlertController(title: "Tebrikler!", message: "Talebiniz Başarıyla Alınmıştır.", preferredStyle: .alert)
                     let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
                     alert.addAction(okButton)
                     self.present(alert, animated: true, completion: nil)
-//                    self.performSegue(withIdentifier: "loginToHome", sender: self)
+                    //                    self.performSegue(withIdentifier: "loginToHome", sender: self)
                 }
             }
         })
@@ -128,9 +130,9 @@ extension UITextField {
         let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
         
         let toolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0,
-        y: 50,
-        width: 100,
-        height: 100))
+                                                         y: 50,
+                                                         width: 100,
+                                                         height: 100))
         toolbar.barStyle = .default
         toolbar.items = [
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),

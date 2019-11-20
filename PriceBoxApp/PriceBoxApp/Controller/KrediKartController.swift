@@ -85,8 +85,8 @@ class KrediKartController: UIViewController ,UIPickerViewDelegate,UIPickerViewDa
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
-    var selectedPriorityAy :String?
-    var selectedPriorityYil :String?
+    var selectedPriorityAy :String = ""
+    var selectedPriorityYil :String = ""
     var priorityTypesAy = ["01","02","03","04","05","06","07","08","09","10","11","12"]
     var priorityTypesYil = ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029","2030","2031","2032","2033",]
     
@@ -104,12 +104,13 @@ class KrediKartController: UIViewController ,UIPickerViewDelegate,UIPickerViewDa
     }
     
     @IBAction func onaylaBttn(_ sender: Any) {
-        
-        let ayYil : String =  selectedPriorityAy! + "/" + selectedPriorityYil!
+          self.showSpinner(onView: self.view)
+        let ayYil : String =  selectedPriorityAy + "/" + selectedPriorityYil
         self.krediKartView.creditCardPost(  cardNumber: KartNo.text!, cardName: kartUzerindekiAd.text!, cardDate: ayYil, cardCvv: cvcTxt.text!, amount: tutarTxt.text!, completionHandler: {
             Dictionary in print(Dictionary)
             if(Dictionary == false){
                 DispatchQueue.main.async {
+                    self.removeSpinner()
                     print("ayse merhaba")
                     //                       let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
                     //                       let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
@@ -119,6 +120,7 @@ class KrediKartController: UIViewController ,UIPickerViewDelegate,UIPickerViewDa
             }
             else{
                 DispatchQueue.main.async {
+                    self.removeSpinner()
                     let alert = UIAlertController(title: "Tebrikler!", message: "Talebiniz Başarıyla Alınmıştır.", preferredStyle: .alert)
                     let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
                     alert.addAction(okButton)

@@ -21,6 +21,7 @@ class HaberAnalizController: UIViewController , UITableViewDelegate,UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HaberAnalizTableViewCell
+        self.removeSpinner()
         cell.haberKonusuText.text = a.haberAnalizText[indexPath.row].baslik
         return cell
     }
@@ -34,7 +35,7 @@ class HaberAnalizController: UIViewController , UITableViewDelegate,UITableViewD
     @IBOutlet weak var haberAnalizTableView: UITableView!
     
     override func viewDidLoad() {
-
+        self.showSpinner(onView: self.view)
         a.haberAnalizGetir()
         haberAnalizTableView.separatorColor = UIColor.white
         super.viewDidLoad()

@@ -24,10 +24,10 @@ class ProfilController: UIViewController,UITextFieldDelegate {
         if yeniSifreTxt.text == yeniSifreTekrarTxt.text{
             self.profilView.sifremiDegistir(password: yeniSifreTxt.text!, oldPassword: sifreTxt.text!, completionHandler: {
                 Dictionary in print(Dictionary)
-                if(Dictionary == false){
+                if(Dictionary == true){
                     DispatchQueue.main.async {
                         print("ayse merhaba")
-                        let alert = UIAlertController(title: "Uyarı", message: self.profilView.errorMesaj, preferredStyle: .alert)
+                        let alert = UIAlertController(title: "Uyarı", message: "Şifre Değiştirme işlemi başarılı.", preferredStyle: .alert)
                         let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
                         alert.addAction(okButton)
                         self.present(alert, animated: true, completion: nil)
@@ -69,26 +69,19 @@ class ProfilController: UIViewController,UITextFieldDelegate {
         padding()
     }
     func padding(){
-        
-        
         sifreTxt.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 10)
         yeniSifreTxt.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 10)
         yeniSifreTekrarTxt.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 10)
         
-        
-        
         sifreTxt.delegate = self
         yeniSifreTxt.delegate = self
         yeniSifreTekrarTxt.delegate = self
-        
-        
         
         KullaniciAdSoyad.layer.cornerRadius = 11
         sifreTxt.layer.cornerRadius = 11
         yeniSifreTxt.layer.cornerRadius = 11
         yeniSifreTekrarTxt.layer.cornerRadius = 11
         sifreyiDegistirBttn.layer.cornerRadius = 11
-        
         
         sifreTxt.layer.borderWidth = 1.0
         sifreTxt.layer.borderColor = UIColor.darkGray.cgColor
@@ -99,12 +92,9 @@ class ProfilController: UIViewController,UITextFieldDelegate {
         sifreyiDegistirBttn.layer.borderWidth = 1.0
         sifreyiDegistirBttn.layer.borderColor = UIColor.darkGray.cgColor
         
-        
-        
         sifreTxt.attributedPlaceholder = NSAttributedString(string: "Güncel Şifre", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGray])
         yeniSifreTxt.attributedPlaceholder = NSAttributedString(string: "Yeni Şifre", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGray])
         yeniSifreTekrarTxt.attributedPlaceholder = NSAttributedString(string: "Şifre Tekrarı", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGray])
-        
         
         sifreyiDegistirBttn.backgroundColor = UIColor(red:0.00, green:0.58, blue:0.51, alpha:1.0)
         

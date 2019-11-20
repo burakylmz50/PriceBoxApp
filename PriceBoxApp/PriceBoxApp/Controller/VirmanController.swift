@@ -20,10 +20,12 @@ class VirmanController: UIViewController , UITextFieldDelegate{
           self.performSegue(withIdentifier: "VirmanToParaCekme", sender: self)
     }
     @IBAction func onaylaBttn(_ sender: Any) {
+          self.showSpinner(onView: self.view)
         self.virmanView.createUser2( virmanFrom: alinacakHesapNoTxt.text!, virmanTo: hedefHesapNoTxt.text!, amount: tutarTxt.text!, completionHandler: {
             Dictionary in print(Dictionary)
             if(Dictionary == false){
                 DispatchQueue.main.async {
+                    self.removeSpinner()
                     print("ayse merhaba")
                     //                       let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
                     //                       let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
@@ -33,6 +35,7 @@ class VirmanController: UIViewController , UITextFieldDelegate{
             }
             else{
                 DispatchQueue.main.async {
+                    self.removeSpinner()
                     let alert = UIAlertController(title: "Tebrikler!", message: "Talebiniz Başarıyla Alınmıştır.", preferredStyle: .alert)
                     let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
                     alert.addAction(okButton)

@@ -18,6 +18,7 @@ class DuyurularController: UIViewController ,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! DuyurularTableViewCell
+        self.removeSpinner()
         cell.duyuruMetin.text = a.duyuruText[indexPath.row].duyuru
         cell.tarihMetin.text = a.duyuruText[indexPath.row].tarih
         
@@ -29,6 +30,7 @@ class DuyurularController: UIViewController ,UITableViewDelegate,UITableViewData
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.showSpinner(onView: self.view)
         a.duyurulariGetir()
         tableView.separatorColor = UIColor.white
         NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)

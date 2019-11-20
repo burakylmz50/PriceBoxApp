@@ -21,7 +21,7 @@ class KrediKartView{
         
         let parameters = ["cardNumber": cardNumber as Any ,  "cardName": cardName as Any,"cardDate": cardDate as Any,"cardCvv": cardCvv as Any ,"amount": amount as Any  ] as [String : Any]
         
-        let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/account")! //change the url
+        let url = URL(string: "https://priceboxfx.azurewebsites.net/api/account")! //change the url
         
         let session = URLSession.shared
         

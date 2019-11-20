@@ -21,7 +21,7 @@ class IbanView{
         
         let parameters = ["ibanBankName": ibanBankName as Any ,  "ibanRecipientName": ibanRecipientName as Any,"ibanNumber": ibanNumber as Any ,"amountTxt": amountTxt as Any,"priceFormat": priceFormat as Any ] as [String : Any]
         
-        let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/account")! //change the url
+        let url = URL(string: "https://priceboxfx.azurewebsites.net/api/account")! //change the url
         
         let session = URLSession.shared
         

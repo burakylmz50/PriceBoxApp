@@ -12,12 +12,13 @@ class RegisterView{
     var adSoyad : String = ""
     var emailAdresi : String = ""
     var sifre : String = ""
+    var errMsg : String = ""
     
-    func createUser(adSoyad :String,emailAdresi:String,sifre:String){
+    func createUser(adSoyad :String,emailAdresi:String,sifre:String,completionHandler:@escaping (Bool) -> ()){
         
         let parameters = ["name": adSoyad as Any, "email": emailAdresi as Any ,  "password": sifre as Any] as [String : Any]
         
-        let url = URL(string: "https://glacial-thicket-60288.herokuapp.com/api/users")! //change the url
+        let url = URL(string: "https://priceboxfx.azurewebsites.net/api/users")! //change the url
         
         let session = URLSession.shared
         
@@ -45,15 +46,21 @@ class RegisterView{
             
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    //       print(json)
+                    // print(json)
                     // handle json...
                     let decoder = JSONDecoder()
                     let gitData = try decoder.decode(RegisterModel.self, from: data)
                     if(gitData.response == true){
+                        self.errMsg = gitData.msg!
+                        completionHandler(true)
                         print("kayıt harbiden başarılı olmuş ya la")
                         DispatchQueue.main.async(){
-                            //                            self.performSegue(withIdentifier: "uyeOldun", sender: self)
+                            //self.performSegue(withIdentifier: "uyeOldun", sender: self)
                         }
+                    }
+                    else{
+                        completionHandler(false)
+                        self.errMsg = gitData.msg!
                     }
                 }
             } catch let error {

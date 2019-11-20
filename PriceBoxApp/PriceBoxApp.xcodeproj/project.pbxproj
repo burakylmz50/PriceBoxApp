@@ -56,7 +56,7 @@
 		654C935C2372248E00435EF1 /* SifremiUnuttumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumController.swift; sourceTree = "<group>"; };
 		654C935E2372249B00435EF1 /* SifremiUnuttumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumView.swift; sourceTree = "<group>"; };
 		654C9360237224A500435EF1 /* SifremiUnuttumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumModel.swift; sourceTree = "<group>"; };
-		65A79F29236C79590023308C /* PriceBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A79F29236C79590023308C /* Pricebox FX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pricebox FX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A79F2C236C79590023308C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A79F2E236C79590023308C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		65A79F30236C79590023308C /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		65A79F2A236C79590023308C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65A79F29236C79590023308C /* PriceBoxApp.app */,
+				65A79F29236C79590023308C /* Pricebox FX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			);
 			name = PriceBoxApp;
 			productName = PriceBoxApp;
-			productReference = 65A79F29236C79590023308C /* PriceBoxApp.app */;
+			productReference = 65A79F29236C79590023308C /* Pricebox FX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -445,14 +445,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3LF4873CGF;
+				DEVELOPMENT_TEAM = DKBB6B72V9;
 				INFOPLIST_FILE = PriceBoxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PriceBoxApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PriceBoxAppForex;
+				PRODUCT_NAME = "Pricebox FX";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,14 +464,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3LF4873CGF;
+				DEVELOPMENT_TEAM = DKBB6B72V9;
 				INFOPLIST_FILE = PriceBoxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PriceBoxApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PriceBoxAppForex;
+				PRODUCT_NAME = "Pricebox FX";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
