@@ -10,7 +10,7 @@
         <!--Register Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RegisterController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RegisterController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
         <!--Haber Analiz Controller-->
         <scene sceneID="kaz-vo-pk0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="5pi-fk-Xy2" customClass="HaberAnalizController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5pi-fk-Xy2" customClass="HaberAnalizController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PjS-xy-c2N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,7 +152,7 @@
                                     <constraint firstAttribute="height" constant="595" id="PFy-jX-npg"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="Fie-Xz-VPH" customClass="HaberAnalizTableViewCell" customModule="PriceBoxApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="Fie-Xz-VPH" customClass="HaberAnalizTableViewCell" customModule="Pricebox_FX" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fie-Xz-VPH" id="fvL-GR-iNe">
@@ -227,7 +227,7 @@
         <!--Home Page Controller-->
         <scene sceneID="S4v-IL-hu7">
             <objects>
-                <viewController storyboardIdentifier="HomePageController" modalPresentationStyle="fullScreen" id="7UY-LC-FdI" customClass="HomePageController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePageController" modalPresentationStyle="fullScreen" id="7UY-LC-FdI" customClass="HomePageController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R08-xw-Eav">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,7 +334,7 @@
         <!--Iban Controller-->
         <scene sceneID="mUV-bZ-Gab">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8qq-ND-381" customClass="IbanController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8qq-ND-381" customClass="IbanController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wM4-Z5-Wfe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -473,7 +473,7 @@
         <!--Virman Controller-->
         <scene sceneID="vRv-rl-Qnh">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="vC4-1e-Zye" customClass="VirmanController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="vC4-1e-Zye" customClass="VirmanController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cqE-TB-SKE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -581,7 +581,7 @@
         <!--Kredi Kart Controller-->
         <scene sceneID="aXE-M3-irH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="UjN-Kl-ipL" customClass="KrediKartController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="UjN-Kl-ipL" customClass="KrediKartController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xua-Up-flE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -728,7 +728,7 @@
         <!--Profil Controller-->
         <scene sceneID="ytX-M4-hqY">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="C2O-IQ-dTG" customClass="ProfilController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="C2O-IQ-dTG" customClass="ProfilController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rzc-0n-EIg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -755,7 +755,6 @@
                             </button>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYA-Jk-7Ze">
                                 <rect key="frame" x="70" y="180" width="274" height="34"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Nc6-df-9rh"/>
                                 </constraints>
@@ -821,6 +820,15 @@
                                 </constraints>
                                 <state key="normal" image="logout"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bakiye:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laR-kq-tHL">
+                                <rect key="frame" x="70" y="222" width="274" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="4VT-nz-oQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -835,6 +843,8 @@
                             <constraint firstItem="dY0-7d-Vjc" firstAttribute="trailing" secondItem="fYA-Jk-7Ze" secondAttribute="trailing" constant="70" id="Dif-3R-78n"/>
                             <constraint firstItem="dY0-7d-Vjc" firstAttribute="trailing" secondItem="0XG-Q9-htx" secondAttribute="trailing" constant="70" id="FQu-fi-1l4"/>
                             <constraint firstItem="dY0-7d-Vjc" firstAttribute="trailing" secondItem="MaF-Ro-qgC" secondAttribute="trailing" constant="20" id="HMb-Kx-XVx"/>
+                            <constraint firstItem="laR-kq-tHL" firstAttribute="leading" secondItem="dY0-7d-Vjc" secondAttribute="leading" constant="70" id="JLn-Uc-1xK"/>
+                            <constraint firstItem="laR-kq-tHL" firstAttribute="top" secondItem="fYA-Jk-7Ze" secondAttribute="bottom" constant="8" id="KJ5-TY-amB"/>
                             <constraint firstItem="0XG-Q9-htx" firstAttribute="top" secondItem="dY0-7d-Vjc" secondAttribute="top" id="LID-tH-tSk"/>
                             <constraint firstItem="DV3-26-bPb" firstAttribute="leading" secondItem="dY0-7d-Vjc" secondAttribute="leading" constant="70" id="Xfe-EW-rBr"/>
                             <constraint firstItem="MaF-Ro-qgC" firstAttribute="top" secondItem="MBw-Rk-Ssa" secondAttribute="bottom" constant="18" id="ZTh-31-sC4"/>
@@ -848,6 +858,7 @@
                             <constraint firstItem="liC-Bb-nGV" firstAttribute="leading" secondItem="dY0-7d-Vjc" secondAttribute="leading" id="o1t-aG-Tuy"/>
                             <constraint firstItem="lbl-iH-y9m" firstAttribute="trailing" secondItem="dY0-7d-Vjc" secondAttribute="trailing" id="oBE-6w-8OO"/>
                             <constraint firstItem="IfD-2p-YFO" firstAttribute="leading" secondItem="N7L-lI-rsk" secondAttribute="trailing" constant="8" id="ogd-xJ-gbZ"/>
+                            <constraint firstItem="dY0-7d-Vjc" firstAttribute="trailing" secondItem="laR-kq-tHL" secondAttribute="trailing" constant="70" id="p59-Ej-zFq"/>
                             <constraint firstItem="0XG-Q9-htx" firstAttribute="leading" secondItem="dY0-7d-Vjc" secondAttribute="leading" constant="70" id="tcK-zC-yPr"/>
                             <constraint firstItem="fYA-Jk-7Ze" firstAttribute="top" secondItem="0XG-Q9-htx" secondAttribute="bottom" constant="8" id="vyh-Du-JR1"/>
                             <constraint firstItem="g3d-NG-PYc" firstAttribute="leading" secondItem="dY0-7d-Vjc" secondAttribute="leading" constant="20" id="xRr-xF-3uW"/>
@@ -859,6 +870,7 @@
                     <navigationItem key="navigationItem" id="Ag7-Wh-Zc1"/>
                     <connections>
                         <outlet property="KullaniciAdSoyad" destination="fYA-Jk-7Ze" id="fEA-tU-ct8"/>
+                        <outlet property="bakiye" destination="laR-kq-tHL" id="wd8-dn-80E"/>
                         <outlet property="cikisYapBttn" destination="N7L-lI-rsk" id="87h-Hr-hSX"/>
                         <outlet property="sifreTxt" destination="g3d-NG-PYc" id="KS4-7j-JPc"/>
                         <outlet property="sifreyiDegistirBttn" destination="DV3-26-bPb" id="3W7-ef-AAd"/>
@@ -870,12 +882,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jgq-Tz-3kP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="1629"/>
+            <point key="canvasLocation" x="389.85507246376812" y="1628.5714285714284"/>
         </scene>
         <!--Sifremi Unuttum Controller-->
         <scene sceneID="eue-k2-7GG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="7g2-If-2La" customClass="SifremiUnuttumController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7g2-If-2La" customClass="SifremiUnuttumController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1jt-cY-Nii">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -957,7 +969,7 @@
         <!--Para Cekme Controller-->
         <scene sceneID="YRc-Mq-Yhl">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="WNL-Ha-Hr9" customClass="ParaCekmeController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="WNL-Ha-Hr9" customClass="ParaCekmeController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sJT-FR-UOA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1063,7 +1075,7 @@
         <!--Duyurular Controller-->
         <scene sceneID="RF9-7M-ZfH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Nex-ZQ-Uss" customClass="DuyurularController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Nex-ZQ-Uss" customClass="DuyurularController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="raL-35-3eO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1081,7 +1093,7 @@
                                 <rect key="frame" x="0.0" y="268" width="414" height="628"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="106" id="Bve-Ul-Wjn" customClass="DuyurularTableViewCell" customModule="PriceBoxApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="106" id="Bve-Ul-Wjn" customClass="DuyurularTableViewCell" customModule="Pricebox_FX" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bve-Ul-Wjn" id="dVN-Gy-Hra">
@@ -1169,7 +1181,7 @@
         <!--Login Controller-->
         <scene sceneID="8IK-jM-2Mu">
             <objects>
-                <viewController storyboardIdentifier="LoginController" modalPresentationStyle="fullScreen" id="FiQ-4g-ZEi" customClass="LoginController" customModule="PriceBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" modalPresentationStyle="fullScreen" id="FiQ-4g-ZEi" customClass="LoginController" customModule="Pricebox_FX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m6A-xB-znX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1247,6 +1259,50 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="ta6-GP-QUx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bt-fs-lDc">
+                                <rect key="frame" x="20" y="752" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Aau-Qk-j89"/>
+                                    <constraint firstAttribute="width" constant="70" id="dLA-lI-sOl"/>
+                                </constraints>
+                                <state key="normal" image="youtube"/>
+                                <connections>
+                                    <action selector="youtubeBttn:" destination="FiQ-4g-ZEi" eventType="touchUpInside" id="IhY-mZ-lCv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lo-AP-h7b">
+                                <rect key="frame" x="245" y="762" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9da-qM-Rc2"/>
+                                    <constraint firstAttribute="height" constant="50" id="znh-hn-Nti"/>
+                                </constraints>
+                                <state key="normal" image="telegram"/>
+                                <connections>
+                                    <action selector="telegramBttn:" destination="FiQ-4g-ZEi" eventType="touchUpInside" id="htD-eW-v21"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrN-W8-LyC">
+                                <rect key="frame" x="344" y="762" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DFC-1Q-rxO"/>
+                                    <constraint firstAttribute="width" constant="50" id="dax-hz-VC7"/>
+                                </constraints>
+                                <state key="normal" image="instagram"/>
+                                <connections>
+                                    <action selector="instagramBttn:" destination="FiQ-4g-ZEi" eventType="touchUpInside" id="9UJ-Ca-gm9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzQ-5U-747">
+                                <rect key="frame" x="145" y="762" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="kZ4-eu-Lu6"/>
+                                    <constraint firstAttribute="height" constant="50" id="vGM-FT-9gn"/>
+                                </constraints>
+                                <state key="normal" image="twitter"/>
+                                <connections>
+                                    <action selector="twitterBttn:" destination="FiQ-4g-ZEi" eventType="touchUpInside" id="IC6-md-DaP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1255,8 +1311,10 @@
                             <constraint firstItem="DjN-cP-Vh3" firstAttribute="leading" secondItem="Y9v-Ct-ngc" secondAttribute="leading" constant="20" id="3es-Dv-93I"/>
                             <constraint firstAttribute="bottom" secondItem="Dr0-Qf-Uck" secondAttribute="bottom" id="4ui-dQ-NSl"/>
                             <constraint firstItem="hQq-fC-ggG" firstAttribute="top" secondItem="9Eq-st-3wd" secondAttribute="bottom" constant="25" id="70i-4O-pGI"/>
+                            <constraint firstItem="Y9v-Ct-ngc" firstAttribute="bottom" secondItem="1bt-fs-lDc" secondAttribute="bottom" constant="40" id="7ny-o9-0q9"/>
                             <constraint firstItem="Y9v-Ct-ngc" firstAttribute="trailing" secondItem="HA1-5J-Dah" secondAttribute="trailing" constant="20" id="9WY-FU-c2j"/>
                             <constraint firstItem="Dr0-Qf-Uck" firstAttribute="trailing" secondItem="Y9v-Ct-ngc" secondAttribute="trailing" id="F7C-pJ-cRX"/>
+                            <constraint firstItem="Y9v-Ct-ngc" firstAttribute="bottom" secondItem="4Lo-AP-h7b" secondAttribute="bottom" constant="50" id="GO6-tU-WE8"/>
                             <constraint firstItem="Dr0-Qf-Uck" firstAttribute="top" secondItem="m6A-xB-znX" secondAttribute="top" id="LLk-fV-oXj"/>
                             <constraint firstItem="hQq-fC-ggG" firstAttribute="leading" secondItem="Y9v-Ct-ngc" secondAttribute="leading" constant="20" id="LNw-fL-4sP"/>
                             <constraint firstItem="ZUn-hp-Y5O" firstAttribute="top" secondItem="HOJ-Od-Fxc" secondAttribute="bottom" constant="108" id="O0V-Xc-Bol"/>
@@ -1266,15 +1324,21 @@
                             <constraint firstItem="9Eq-st-3wd" firstAttribute="top" secondItem="ZXt-Fk-6wo" secondAttribute="bottom" constant="57" id="UiU-s9-13S"/>
                             <constraint firstItem="ZXt-Fk-6wo" firstAttribute="top" secondItem="Y9v-Ct-ngc" secondAttribute="top" id="XkG-v1-uFn"/>
                             <constraint firstItem="Y9v-Ct-ngc" firstAttribute="trailing" secondItem="ZUn-hp-Y5O" secondAttribute="trailing" constant="20" id="YCg-2a-sm2"/>
+                            <constraint firstItem="JrN-W8-LyC" firstAttribute="leading" secondItem="4Lo-AP-h7b" secondAttribute="trailing" constant="49" id="ZVx-IR-xEl"/>
                             <constraint firstItem="Y9v-Ct-ngc" firstAttribute="trailing" secondItem="DjN-cP-Vh3" secondAttribute="trailing" constant="20" id="Zhb-48-ElC"/>
                             <constraint firstItem="Dr0-Qf-Uck" firstAttribute="leading" secondItem="Y9v-Ct-ngc" secondAttribute="leading" id="e3S-vc-0TG"/>
                             <constraint firstItem="ZUn-hp-Y5O" firstAttribute="leading" secondItem="Y9v-Ct-ngc" secondAttribute="leading" constant="20" id="ekw-tu-g9l"/>
+                            <constraint firstItem="Y9v-Ct-ngc" firstAttribute="trailing" secondItem="JrN-W8-LyC" secondAttribute="trailing" constant="20" id="fAT-Ha-kDu"/>
                             <constraint firstItem="HA1-5J-Dah" firstAttribute="leading" secondItem="Y9v-Ct-ngc" secondAttribute="leading" constant="20" id="fvV-RK-vkA"/>
+                            <constraint firstItem="1bt-fs-lDc" firstAttribute="leading" secondItem="Y9v-Ct-ngc" secondAttribute="leading" constant="20" id="jdT-ZN-Ld5"/>
                             <constraint firstItem="DjN-cP-Vh3" firstAttribute="top" secondItem="hQq-fC-ggG" secondAttribute="bottom" constant="8" id="kGd-wB-3AT"/>
+                            <constraint firstItem="TzQ-5U-747" firstAttribute="leading" secondItem="1bt-fs-lDc" secondAttribute="trailing" constant="55" id="ldS-sf-3O7"/>
                             <constraint firstItem="Y9v-Ct-ngc" firstAttribute="trailing" secondItem="9Eq-st-3wd" secondAttribute="trailing" constant="20" id="qkK-eU-bBP"/>
                             <constraint firstItem="ZXt-Fk-6wo" firstAttribute="leading" secondItem="Y9v-Ct-ngc" secondAttribute="leading" constant="70" id="rAf-AC-f74"/>
                             <constraint firstItem="Y9v-Ct-ngc" firstAttribute="trailing" secondItem="ZXt-Fk-6wo" secondAttribute="trailing" constant="70" id="rP4-0p-iFo"/>
                             <constraint firstItem="Y9v-Ct-ngc" firstAttribute="trailing" secondItem="hQq-fC-ggG" secondAttribute="trailing" constant="20" id="s5v-AS-3aa"/>
+                            <constraint firstItem="Y9v-Ct-ngc" firstAttribute="bottom" secondItem="TzQ-5U-747" secondAttribute="bottom" constant="50" id="u2C-UU-gPH"/>
+                            <constraint firstItem="Y9v-Ct-ngc" firstAttribute="bottom" secondItem="JrN-W8-LyC" secondAttribute="bottom" constant="50" id="xzL-IK-mFn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y9v-Ct-ngc"/>
                     </view>
@@ -1296,13 +1360,17 @@
         <image name="PriceBox_BackGround" width="1440" height="2960"/>
         <image name="backBttn" width="96" height="96"/>
         <image name="closeicon60px" width="60" height="60"/>
+        <image name="instagram" width="100" height="100"/>
         <image name="logout" width="512" height="512"/>
         <image name="person" width="512" height="512"/>
         <image name="pricebox_logo_white" width="1361" height="461"/>
+        <image name="telegram" width="100" height="100"/>
+        <image name="twitter" width="100" height="100"/>
+        <image name="youtube" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pys-ZD-3ss"/>
         <segue reference="45I-0T-EPe"/>
-        <segue reference="bqL-Yk-mh7"/>
+        <segue reference="CHk-C9-Uey"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6547265C238569DC00D606BE /* asdasdasd.png in Resources */ = {isa = PBXBuildFile; fileRef = 6547265B238569DC00D606BE /* asdasdasd.png */; };
 		654C93572371E69800435EF1 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C93562371E69800435EF1 /* ProfilController.swift */; };
 		654C93592371E6A500435EF1 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C93582371E6A500435EF1 /* ProfilView.swift */; };
 		654C935B2371E6B000435EF1 /* ProfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C935A2371E6B000435EF1 /* ProfilModel.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6547265B238569DC00D606BE /* asdasdasd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asdasdasd.png; sourceTree = "<group>"; };
 		654C93562371E69800435EF1 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		654C93582371E6A500435EF1 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		654C935A2371E6B000435EF1 /* ProfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilModel.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				65A79F41236C79710023308C /* View */,
 				65A79F40236C796A0023308C /* Model */,
 				65A79F2C236C79590023308C /* AppDelegate.swift */,
+				6547265B238569DC00D606BE /* asdasdasd.png */,
 				65A79F2E236C79590023308C /* SceneDelegate.swift */,
 				65A79F32236C79590023308C /* Main.storyboard */,
 				65A79F35236C795A0023308C /* Assets.xcassets */,
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6547265C238569DC00D606BE /* asdasdasd.png in Resources */,
 				65A79F39236C795B0023308C /* LaunchScreen.storyboard in Resources */,
 				65A79F36236C795A0023308C /* Assets.xcassets in Resources */,
 				65A79F34236C79590023308C /* Main.storyboard in Resources */,
@@ -451,7 +455,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PriceBoxAppForex;
 				PRODUCT_NAME = "Pricebox FX";
 				SWIFT_VERSION = 5.0;
@@ -470,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PriceBoxAppForex;
 				PRODUCT_NAME = "Pricebox FX";
 				SWIFT_VERSION = 5.0;

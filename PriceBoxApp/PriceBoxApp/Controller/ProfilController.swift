@@ -16,6 +16,7 @@ class ProfilController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var yeniSifreTekrarTxt: UITextField!
     @IBOutlet weak var sifreyiDegistirBttn: UIButton!
     @IBOutlet weak var cikisYapBttn: UIButton!
+    @IBOutlet weak var bakiye: UILabel!
     
     @IBAction func backBttn(_ sender: Any) {
         self.performSegue(withIdentifier: "profilToHomePage", sender: self)
@@ -61,7 +62,8 @@ class ProfilController: UIViewController,UITextFieldDelegate {
         
         profilView.kullaniciBilgileriniGetir( completion: { response in
             DispatchQueue.main.async {
-                self.KullaniciAdSoyad.text = response.first
+                self.KullaniciAdSoyad.text = self.profilView.burakasd
+                self.bakiye.text = "Bakiye: " + self.profilView.bakiye
             }
             
             

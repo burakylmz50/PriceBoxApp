@@ -19,4 +19,5 @@ struct ProfilModelKullaniciData :Codable{
     let email : String?
     let userNumber : String?
     let date : String?
+    let userBalance : String?
 }

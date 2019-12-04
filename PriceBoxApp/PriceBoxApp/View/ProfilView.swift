@@ -56,14 +56,14 @@ class ProfilView{
                         completionHandler(true)
                         
                         //                        tokenDonus = gitData.token!
-
+                        
                         DispatchQueue.main.async(){
                             
                             //                              self.performSegue(withIdentifier: "loginToHome", sender: self)
                         }
                     }
                     else{
-                                                self.errorMesaj = gitData.msg!
+                        self.errorMesaj = gitData.msg!
                         completionHandler(false)
                     }
                 }
@@ -78,32 +78,37 @@ class ProfilView{
     var duyuruText : ProfilModelKullaniciData?
     var duyuruText22  : [String] = ["burak"]
     var burakasd : String = ""
+    var bakiye : String = ""
     func kullaniciBilgileriniGetir( completion: @escaping (_ success: [String]) -> Void) {
-            
-            let urlString = "https://priceboxfx.azurewebsites.net/api/auth"
-            let session = URLSession.shared
-            let url = URL(string: urlString)!
-            var request = URLRequest(url: url)
-            request.addValue(tokenDonus, forHTTPHeaderField: "x-auth-token")
-            
-            session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
-                if let data = data{
-                    do{
-                        let json = try JSONSerialization.jsonObject(with: data)
-                        print(json)
-                        let decoder = JSONDecoder()
-                        let gitData = try decoder.decode(ProfilModelKullaniciData.self, from: data)
-
-                        self.burakasd = gitData.name!
-                        print(self.burakasd)
-                        completion([self.burakasd])
-                    }
-                    catch {
-                        print(error)
-                    }
+        
+        let urlString = "https://priceboxfx.azurewebsites.net/api/auth"
+        let session = URLSession.shared
+        let url = URL(string: urlString)!
+        var request = URLRequest(url: url)
+        request.addValue(tokenDonus, forHTTPHeaderField: "x-auth-token")
+        
+        session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
+            if let data = data{
+                do{
+                    let json = try JSONSerialization.jsonObject(with: data)
+                    print(json)
+                    let decoder = JSONDecoder()
+                    let gitData = try decoder.decode(ProfilModelKullaniciData.self, from: data)
+                    
+                    self.burakasd = gitData.name!
+                    self.bakiye = gitData.userBalance!
+                    
+                    print(self.burakasd)
+                    print(self.bakiye)
+                    completion([self.burakasd])
+                    completion([self.bakiye])
                 }
-                
-            }).resume()
+                catch {
+                    print(error)
+                }
+            }
             
-        }
+        }).resume()
+        
+    }
 }

@@ -41,6 +41,72 @@ class LoginController: UIViewController , UITextFieldDelegate {
     @IBAction func sifremiUnuttum(_ sender: Any) {
         self.performSegue(withIdentifier: "loginToSifremiUnuttum", sender: self)
     }
+    @IBAction func youtubeBttn(_ sender: Any) {
+        let YoutubeUser =  "UCW9I5RcLAy4SmppPblRPKAQ"
+        let appURL = NSURL(string: "youtube://www.youtube.com/channel/\(YoutubeUser)")!
+        let webURL = NSURL(string: "https://www.youtube.com/channel/\(YoutubeUser)")!
+        let application = UIApplication.shared
+
+        if application.canOpenURL(appURL as URL) {
+            application.open(appURL as URL)
+        } else {
+            // if Youtube app is not installed, open URL inside Safari
+            application.open(webURL as URL)
+        }
+    }
+    @IBAction func twitterBttn(_ sender: Any) {
+        let screenName =  "priceboxfx"
+        let appURL = URL(string: "twitter://user?screen_name=\(screenName)")!
+        let webURL = URL(string: "https://twitter.com/\(screenName)")!
+
+        if UIApplication.shared.canOpenURL(appURL as URL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        } else {
+            //redirect to safari because the user doesn't have Instagram
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(webURL)
+            } else {
+                UIApplication.shared.openURL(webURL)
+            }
+        }
+    }
+    @IBAction func telegramBttn(_ sender: Any) {
+        let botURL = URL.init(string: "https://t.me/\("priceboxfx")")
+
+        if UIApplication.shared.canOpenURL(botURL!)
+        {
+             if #available(iOS 10.0, *) {
+            UIApplication.shared.open(botURL!)
+            }
+        } else {
+            let urlAppStore = URL(string: "itms-apps://itunes.apple.com/app/id686449807")
+            if(UIApplication.shared.canOpenURL(urlAppStore!))
+            {
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(urlAppStore!, options: [:], completionHandler: nil)
+                } else {
+                    UIApplication.shared.openURL(urlAppStore!)
+                }
+            }
+        }
+    }
+    @IBAction func instagramBttn(_ sender: Any) {
+        let Username =  "pricebox.fx" // Your Instagram Username here
+        let appURL = URL(string: "instagram://user?username=\(Username)")!
+        let application = UIApplication.shared
+
+        if application.canOpenURL(appURL) {
+            application.open(appURL)
+        } else {
+            // if Instagram app is not installed, open URL inside Safari
+            let webURL = URL(string: "https://instagram.com/\(Username)")!
+            application.open(webURL)
+        }
+    }
     @IBAction func girisYap(_ sender: Any) {
         
         self.showSpinner(onView: self.view)
